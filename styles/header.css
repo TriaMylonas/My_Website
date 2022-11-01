@@ -1,0 +1,40 @@
+
+
+
+/****************************************************/ 
+/*              Styling for the header              */
+
+
+#logo{
+    width: 70px;
+    border-radius: 60%;
+}
+/* με αυτό τον τρόπο διαλέγω μόνο τα συγκεκριμένα αντικείμενα */
+header nav ul li a span{
+    color: var(--color-special-green);
+}
+
+.navigation-bar{
+    margin: 3vh 2vw ;
+    display: flex;
+    justify-content: space-between;
+    /* το κάθε αντικείμενο πιάνει τον χώρο που χρειάζεται μόνο. */
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+/* κάνω τα list items να φαίνοντε στην σειρά */
+.navigation-bar li{
+    display: inline;
+}
+/* Αλλάζω μόνο τα στοιχεία απο τις άγκυρες */
+.navigation-bar a{
+    font-size: .7em;
+    padding: .4em;
+    color: var(--color-white);
+    text-decoration: none;/**** με αυτό δεν είναι υπογραμισμένα να στοιχεία της anchor */
+}
+
+.navigation-bar a:hover{
+    background-color: rgba(131, 159, 187, .2);
+    border-radius: 8%;
+}
