@@ -1,0 +1,21 @@
+
+
+.about-p{
+    color: var( --color-white);
+    line-height: 3ch;
+    font-size: calc(1.1ch + 0.4vw);
+    max-width: 1200px;
+}
+
+.about-name-and-foto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15vw;
+   
+}
+.about-foto{
+    width: calc(15% + 0.5vw);
+    height: auto;
+    border-radius: 45%;
+}
