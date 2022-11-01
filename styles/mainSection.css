@@ -24,7 +24,7 @@ section{
 .main-div h1{
     color: var(--color-writinggray);
     font-size:calc(4ch + 0.5vw);
-    text-shadow: 2px 2px 1px var(--color-special-blue);
+    text-shadow: 2px 2px 5px var(--color-special-blue);
 }
 
 .main-div h3{

@@ -19,3 +19,7 @@
     height: auto;
     border-radius: 45%;
 }
+
+.about-name-and-foto h1{
+    font-size: calc(3ch + 0.4vw);
+}
