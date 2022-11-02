@@ -11,13 +11,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 15vw;
+    
    
 }
 .about-foto{
     width: calc(15% + 0.5vw);
     height: auto;
     border-radius: 45%;
+    margin-right: 5vw;
 }
 
 .about-name-and-foto h1{
