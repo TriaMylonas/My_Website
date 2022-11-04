@@ -1,0 +1,14 @@
+
+
+
+h3, span{
+    
+    opacity: 0 ;
+    transition: all 2s ease;
+    
+}
+
+.animation{
+    opacity: 1;
+  
+} 

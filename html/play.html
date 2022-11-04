@@ -9,7 +9,23 @@
     <link type="text/css" rel="stylesheet" href="../styles/header.css">
     <link type="text/css" rel="stylesheet" href="../styles/footer.css">
     <link type="text/css" rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/play.css">
     
+    <!-- TODO πρεπει να κάνω μετα CSS για το main εδώ πέρα και να αλλάξω την εμφάνιση
+        στην σελίδα. -->
+    <style>
+        .grid-container{
+            display: inline-grid;
+            grid-template-columns: auto;
+        }
+
+        .grid-item{
+            border: 1px solid rgba(228, 219, 219, 0.8);
+            padding: 20px;
+            margin: 20px;
+        }
+
+    </style>
     
     <title>Tria Mylo</title>
 </head>
@@ -46,9 +62,19 @@
 
     </header>
     
-    <section>
-        <h1>Hello play page</h1>
-    </section>
+    <main class="grid-container">
+        <h1 class="grid-item">Hallo!! lass uns spielen!</h1>
+        
+        <form class="grid-item" action="../JavaScipt/play.js" method="get">
+            <label for="userInput">schreib hier etwas:</label>
+            <input type="text" name="schribe etwas" id="userInput">
+            <input type="submit" name="submit" id="userSubmit" value="submit">
+        
+        </form>
+
+        <label style = "text-align: center;" class="grid-item">Ergebnisse</label>
+        <h2 style = "text-align: center;"class="grid-item" id="outputText">test12</h2>
+    </main>
 
 
         <!-- Αυτό γεμίζει το κενό ανάμεσα σε όλα τα παραπάνω, με αποτέλεσμα το footer της σελίδας 
@@ -78,5 +104,6 @@
         </div>
     </footer>
 
+    <script src="../JavaScipt/play.js"> </script>
 </body>
 </html>
