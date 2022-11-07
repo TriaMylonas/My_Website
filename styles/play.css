@@ -1,14 +1,47 @@
 
 
 
-h3, span{
-    
-    opacity: 0 ;
-    transition: all 2s ease;
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: auto;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Start Submit button adjustments */
+#submitBtn{
+    background-color: #333333 ;
+    color: #00FF00;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.3em 1em;
+    margin-left: 1em;
+    border: 1px solid #a1bba1;
+    box-shadow: 0px 0px 8px #a1bba1;
     
 }
 
-.animation{
-    opacity: 1;
-  
-} 
+#submitBtn:hover{
+    cursor: pointer;
+}
+
+#submitBtn:active{
+    /*οταν πατάω το κουμπί εξαφανίζεται η σκιά και φένεται σαν να πάτισα πραγματικό κουμπί!*/
+    box-shadow: none;
+   
+}
+
+/* Stop Submit button adjustments */
+
+#label-item-2{
+    line-height: 2.5rem;
+}
+
+.grid-item-2{
+    margin-top: 2rem;
+}
+
+.grid-item-3 {
+    margin-top: 5rem;
+}

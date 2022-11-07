@@ -9,24 +9,9 @@
     <link type="text/css" rel="stylesheet" href="../styles/header.css">
     <link type="text/css" rel="stylesheet" href="../styles/footer.css">
     <link type="text/css" rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/play.css">
+    <link type="text/css" rel="stylesheet" href="../styles/play.css">
     
-    <!-- TODO πρεπει να κάνω μετα CSS για το main εδώ πέρα και να αλλάξω την εμφάνιση
-        στην σελίδα. -->
-    <style>
-        .grid-container{
-            display: inline-grid;
-            grid-template-columns: auto;
-        }
 
-        .grid-item{
-            border: 1px solid rgba(228, 219, 219, 0.8);
-            padding: 20px;
-            margin: 20px;
-        }
-
-    </style>
-    
     <title>Tria Mylo</title>
 </head>
 
@@ -63,17 +48,24 @@
     </header>
     
     <main class="grid-container">
-        <h1 class="grid-item">Hallo!! lass uns spielen!</h1>
+        <h1 class="grid-item-1">Hallo!! lass uns spielen!</h1>
         
-        <form class="grid-item" action="../JavaScipt/play.js" method="get">
-            <label for="userInput">schreib hier etwas:</label>
-            <input type="text" name="schribe etwas" id="userInput">
-            <input type="submit" name="submit" id="userSubmit" value="submit">
-        
-        </form>
+        <div class="grid-item-2">
 
-        <label style = "text-align: center;" class="grid-item">Ergebnisse</label>
-        <h2 style = "text-align: center;"class="grid-item" id="outputText">test12</h2>
+            <label for="userInput">schreib hier etwas:</label>
+            <!-- αυτό είναι ένα κείμενο -->
+            <input type="text" id="userInput" maxlength="25" >
+            <!-- αυτό το input είναι για το κουμπί -->
+            <button id="submitBtn" onclick="doSomthingForThorsten()">  Submit  </button>
+            
+            <label id="label-item-2" > <br>und es wird in Bewegung erscheinen!</label>
+        </div>
+
+        <div class="grid-item-3">
+            <label for="outputText">Ergebnisse: </label>
+            <br>
+            <label class="grid-item" id="outputText"> </label>
+        </div>
     </main>
 
 
