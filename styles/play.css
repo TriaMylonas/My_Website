@@ -52,7 +52,7 @@
 }
 
 
-grid-item, span{
+grid-item-3 > span{
 
     /* Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency. */
     opacity: 0;
@@ -63,4 +63,21 @@ grid-item, span{
 .animation{
     opacity: 1;
     transition: all 0.7s ease;
+}
+
+/* διακόσμηση για την κινούμενη γραμματοσειρά με το κείμενο.  */
+.news-ticker{
+    color: var(--color-special-green);
+    
+    transform: translateX(100%);
+    animation: moving 20s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
