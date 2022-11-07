@@ -34,6 +34,8 @@
 
 /* Stop Submit button adjustments */
 
+
+
 #label-item-2{
     line-height: 2.5rem;
 }
@@ -42,6 +44,23 @@
     margin-top: 2rem;
 }
 
-.grid-item-3 {
+
+
+
+.grid-item-3{
     margin-top: 5rem;
+}
+
+
+grid-item, span{
+
+    /* Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency. */
+    opacity: 0;
+    font-size: 2em;
+    color: var(--color-special-green);
+}
+
+.animation{
+    opacity: 1;
+    transition: all 0.7s ease;
 }
