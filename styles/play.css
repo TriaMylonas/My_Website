@@ -70,7 +70,7 @@ label span{
     /* background-color:rgb(134, 198, 241, 0.2);
      */
     color: var(--color-special-green);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5em;
     overflow: hidden;
     position: relative; 
@@ -81,22 +81,19 @@ label span{
 }
 .news-ticker p{
     
-    width:100%;
+    width:80%;
     padding:0.5rem;
      
-    animation: Thorsten 10s linear infinite;
+    animation: Thorsten 15s linear infinite;
 }
 
 @keyframes Thorsten{
     0% {
         transform: translate(100%);
-        color: red;
-    }
-    50%{
-        color: black;
+        color: rgb(215, 217, 235);
     }
     100%{
         transform: translate(-100%);
-        color: #00FF00;
+        color: var(--color-special-green);
     }
 }
