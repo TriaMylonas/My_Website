@@ -19,6 +19,7 @@
     height: auto;
     border-radius: 45%;
     margin-right: 5vw;
+    opacity: 0.6;
 }
 
 .about-name-and-foto h1{
