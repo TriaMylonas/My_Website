@@ -52,32 +52,51 @@
 }
 
 
-grid-item-3 > span{
+label span{
 
-    /* Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency. */
-    opacity: 0;
-    font-size: 2em;
     color: var(--color-special-green);
+    /* Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency. */
+    opacity:0;
+    transition: all 0.7s linear;
+    font-size: 2em;
 }
 
 .animation{
     opacity: 1;
-    transition: all 0.7s ease;
 }
 
 /* διακόσμηση για την κινούμενη γραμματοσειρά με το κείμενο.  */
 .news-ticker{
+    /* background-color:rgb(134, 198, 241, 0.2);
+     */
     color: var(--color-special-green);
+    font-weight: bold;
+    font-size: 1.5em;
+    overflow: hidden;
+    position: relative; 
+    letter-spacing: 1px;
+    display: flex; 
+    align-items: center;
+    text-transform: uppercase;
+}
+.news-ticker p{
     
-    transform: translateX(100%);
-    animation: moving 20s linear infinite;
+    width:100%;
+    padding:0.5rem;
+     
+    animation: Thorsten 10s linear infinite;
 }
 
-@keyframes moving{
-    0%{
-        transform: translateX(100%);
+@keyframes Thorsten{
+    0% {
+        transform: translate(100%);
+        color: red;
+    }
+    50%{
+        color: black;
     }
     100%{
-        transform: translateX(-100%);
+        transform: translate(-100%);
+        color: #00FF00;
     }
 }

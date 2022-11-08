@@ -6,7 +6,7 @@ var enter = document.getElementById("userInput");
 
 enter.addEventListener("keypress", function(event){
     if(event.key === "Enter") {
-        event.preventDefault;
+        // event.preventDefault; Das ist nur für Formular, damit nicht mit Enter das Formular gesendet wurde.
         document.getElementById("submitBtn").click();
     }});
 
@@ -17,11 +17,14 @@ function doSomthingForThorsten(){
     const input = document.getElementById("userInput");
     // Variable für die output
     const output = document.getElementById("outputText");
+    const movingOutput = document.getElementById("movin-text");
 
     output.innerHTML = " ";
-
+    movingOutput.innerHTML ="";
+    
     if (input.value != ""){
-
+        
+        movingOutput.innerHTML = input.value;
         // so kann ich den Wert in der Ausgangsbezeichnung in den Wert der Nutzer Eingabe ändern.
         //output.innerHTML = input.value;
        
@@ -36,7 +39,7 @@ function doSomthingForThorsten(){
         // jeden Buchstaben in einen "span" gesetzt, damit ich ihn jederzeit separat anzeigen kann.
         for (let index = 0; index < strText.length; index++) {
             // hier generate die spans
-            output.innerHTML += "<span>" + splitText[index] + "</span>";
+            output.innerHTML += "<span class>" + splitText[index] + "</span>";
         }
         
         // jetzt ich packt alle "span" in eine Klass rein, damit ich in CSS mit den arbeiten kann.
@@ -59,6 +62,7 @@ function doSomthingForThorsten(){
     }
     else{
         output.innerHTML = "Du hast nicht geschrieben!"
+        movingOutput.innerHTML = "Du hast nicht geschrieben!"
     }
     
 }
