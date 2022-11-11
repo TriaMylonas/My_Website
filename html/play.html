@@ -50,25 +50,30 @@
     <main class="grid-container">
         <h1 class="grid-item-1">Hallo!! lass uns spielen!</h1>
         
-        <div class="grid-item-2">
-
-            <label for="userInput">schreib hier etwas:</label>
-            <!-- αυτό είναι ένα κείμενο -->
-            <input type="text" id="userInput" maxlength="50" >
-            <!-- αυτό το input είναι για το κουμπί -->
-            <button id="submitBtn" onclick="doSomthingForThorsten()">  Submit  </button>
+        <div class="grid-item-2-container">
             
-            <label id="label-item-2" > <br>und es wird in Bewegung erscheinen!</label>
-        </div>
-
-        <div class="grid-item-3">
-            <label for="outputText">Ergebnisse: </label>
-            <br><br>
-            <label class = "test" id="outputText"> </label>
-        </div>
-        <br><br>
-        <div class="news-ticker">
-            <p id ="movin-text"></p>
+            <h3 class="grid-item-2-title"> <span> Spiel 1:</span></h3>
+            <h4>Geben Sie einen Text ein, und dann drücken Sie die Bestätigungstaste.
+                <br>
+                Der gegebene Text wird sowohl buchstäblich als aouch als laufender Titel angezeigt!   
+            </h4>
+            <div class="grid-item-2-index">
+                <label for="userInput">Bitte geben Sie einen Text ein:</label>
+                <!-- αυτό είναι ένα κείμενο -->
+                <input type="text" id="userInput" maxlength="50" >
+                <!-- αυτό το input είναι για το κουμπί -->
+                <button id="submitBtn" onclick="doSomthingForThorsten()">  Submit  </button>
+                
+                <label id="label-item-2" >und viel Spas!!</label>
+            </div>    
+            
+            <div class="grid-item-2-output">  
+                <label class = "test" id="outputText"> </label>
+            </div>
+            <br>
+            <div class="news-ticker">
+                <p id ="movin-text"></p>
+            </div>
         </div>
     </main>
 

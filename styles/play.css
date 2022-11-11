@@ -7,6 +7,10 @@
     text-align: center;
     padding: 20px;
     margin: 20px;
+    position: relative;
+}
+.grid-item-1{
+    margin-top: 0;
 }
 
 /* Start Submit button adjustments */
@@ -36,19 +40,26 @@
 
 
 
+.grid-item-2-container{
+    margin-top: 5rem;
+    border: 1px solid var(--color-special-green);
+    position: absolute;
+    height: 300px;
+    width:100%;
+}
+
+.grit-item-2-title, h3> span{
+    border-bottom: 0.15rem solid var(--color-special-blue);
+}   
+
 #label-item-2{
     line-height: 2.5rem;
+    margin-left: 2rem;
+
 }
 
-.grid-item-2{
+.grid-item-2-output{
     margin-top: 2rem;
-}
-
-
-
-
-.grid-item-3{
-    margin-top: 5rem;
 }
 
 
@@ -84,7 +95,7 @@ label span{
     width:80%;
     padding:0.5rem;
      
-    animation: Thorsten 10s linear infinite;
+    animation: Thorsten 9s linear infinite;
 }
 
 @keyframes Thorsten{
