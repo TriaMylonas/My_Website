@@ -58,7 +58,9 @@
 }
 
 .grid-item-2-output{
-    margin-top: 2rem;
+    margin-top: 10px;
+    padding: 5px;
+    height: 20px;
 }
 
 
@@ -79,6 +81,7 @@ label span{
 .news-ticker{
     /* background-color:rgb(134, 198, 241, 0.2);
      */
+     height: 60px;
     color: var(--color-special-green);
     font-weight: 700;
     font-size: 1.5em;
@@ -94,16 +97,28 @@ label span{
     width:80%;
     
      
-    animation: Thorsten 9s linear infinite;
+    animation: Thorsten 8s linear infinite;
 }
 
 @keyframes Thorsten{
     0% {
-        transform: translate(100%);
+        transform: translate(90%);
         color: rgb(215, 217, 235);
     }
     100%{
-        transform: translate(-100%);
+        transform: translate(-90%);
         color: var(--color-special-green);
     }
 }
+/*******************************************************************************/
+
+.grid-item-3-container{
+    margin-top: 1rem;
+    border: 1px solid var(--color-special-green);
+    width:100%;
+    height: auto;
+}
+
+.grit-item-3-title, h3> span{
+    border-bottom: 0.15rem solid var(--color-special-blue);
+}   
