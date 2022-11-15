@@ -11,9 +11,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-   
 }
+h1{
+    line-height: var(--line);
+
+}
+
 .about-foto{
     width: calc(15% + 0.5vw);
     height: auto;
@@ -28,6 +31,7 @@
 
 /* in that way can all the text in the middle stay */
 section{
-    width: 800px;
+    max-width: 800px;
     margin-inline: auto;
+    padding: 0 1rem 0 1rem;
 }
