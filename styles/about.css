@@ -4,7 +4,7 @@
     color: var( --color-white);
     line-height: 3ch;
     font-size: calc(1.1ch + 0.4vw);
-    max-width: 1200px;
+    
 }
 
 .about-name-and-foto{
