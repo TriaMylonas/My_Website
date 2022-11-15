@@ -26,3 +26,8 @@
     font-size: calc(3ch + 0.4vw);
 }
 
+/* in that way can all the text in the middle stay */
+section{
+    width: 800px;
+    margin-inline: auto;
+}
