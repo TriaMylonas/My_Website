@@ -125,27 +125,22 @@ label span{
 
 
 
-.grid-item-3-fotos{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:flex-end;
+td  {
+    background-color: lightcyan;
 }
 
-.grid-item-3-fotos img{
-    width: 3rem;    
+table{
+    width:100%;
+    border-spacing: 1rem;
 }
 
-.cent-50 img, .cent-20 img, .cent-10 img{
-    width:2.5rem; 
+.bigCoins{
+    width: 3rem;
 }
-.cent-5 img, .cent-2 img, .cent-1 img{
-    width:2rem;
-}
-
-.coins-output{
-    display:flex;
+.middleCoins{
+    width: 2.5rem; 
 }
 
-.coins-output>*{
-    border: 1px red solid;
+.smallCoins{
+    width: 2rem;
 }
