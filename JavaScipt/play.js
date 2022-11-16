@@ -67,5 +67,83 @@ function doSomthingForThorsten(){
     
 }
 
+/*************************************************************************************************************************************
+ * 
+ * ***********************************************************************************************************************************
+ *   ---------second Task-------------------!SECTION money game
+ *  
+ * */
 
 
+function getMoney(){
+
+    const output2euro = document.getElementById("euro-2-output"); 
+
+    const money = document.getElementById("item3-userInput");
+
+
+
+
+    // check users input
+    if (isNaN(money.value)){
+        alert("False input! \n You must write a number!")
+        // set the value of the input field in default.
+        money.value = " ";   
+    } 
+    else{
+        
+        let euro2coins = 0;
+        let euro1coins = 0;
+        let cent50coins = 0;
+        let cent20coins = 0;
+        let cent10coins = 0;
+        let cent5coins = 0;
+        let cent2coins = 0;
+        let cent1coins = 0;
+        let restMoneyCoins = 0;
+
+        // 2 euro coins
+        euro2coins = money.value / 200;
+        let stringEuro2coins = euro2coins.toString().split(".")[0];
+        restMoneyCoins = money.value % 200; 
+        //shows the amount of 2€ coins
+        output2euro.textContent = "x " + stringEuro2coins;
+        
+        //1 euro coins
+        euro1coins = restMoneyCoins / 100;
+        document.getElementById("euro-1-output").textContent ="x " + euro1coins.toString().split(".")[0];
+        restMoneyCoins = restMoneyCoins % 100;
+
+        //50 Cents cois
+        cent50coins = restMoneyCoins / 50;
+        document.getElementById("cents-50-output").textContent = "x " + cent50coins.toString().split(".")[0];
+        restMoneyCoins = restMoneyCoins % 50;
+
+        cent20coins = restMoneyCoins / 20;
+        document.getElementById("cents-20-output").textContent = "x " + cent20coins.toString().split(".")[0];
+        restMoneyCoins = restMoneyCoins % 20;
+
+        cent10coins = restMoneyCoins / 10;
+        document.getElementById("cents-10-output").textContent = "x " + cent10coins.toString().split(".")[0];
+        restMoneyCoins = restMoneyCoins % 10;
+
+        cent5coins = restMoneyCoins / 5;
+        document.getElementById("cents-5-output").textContent = "x " + cent5coins.toString().split(".")[0];
+        restMoneyCoins = restMoneyCoins % 5;
+
+        cent2coins = restMoneyCoins / 2;
+        document.getElementById("cents-2-output").textContent = "x " + cent2coins.toString().split(".")[0];
+        restMoneyCoins = restMoneyCoins % 2;
+
+        cent1coins = restMoneyCoins / 1;
+        document.getElementById("cents-1-output").textContent = "x " + cent1coins.toString().split(".")[0];
+        restMoneyCoins = restMoneyCoins % 1;
+
+        console.log(euro2coins);
+        console.log(restMoneyCoins);
+        console.log(stringEuro2coins);
+
+    }
+
+
+}
