@@ -76,14 +76,13 @@ function doSomthingForThorsten(){
 
 
 function getMoney(){
-
+    
+   
+    
     const output2euro = document.getElementById("euro-2-output"); 
 
     const money = document.getElementById("item3-userInput");
-
-
-
-
+    
     // check users input
     if (isNaN(money.value)){
         alert("False input! \n You must write a number!")
@@ -91,6 +90,8 @@ function getMoney(){
         money.value = " ";   
     } 
     else{
+
+      
         
         let euro2coins = 0;
         let euro1coins = 0;
@@ -142,8 +143,31 @@ function getMoney(){
         console.log(euro2coins);
         console.log(restMoneyCoins);
         console.log(stringEuro2coins);
-
+        
+        showThe2Euro(5);
+       
     }
 
 
+}
+
+
+function showThe2Euro(a){
+    
+    for (let index = 0; index < a-1; index++) {
+        
+        let whereTheImageGoes = document.getElementById("skata");
+        let img = new Image();
+        img.src = "../pictures/2euro.png"
+        img.className = "bigCoins";
+        
+        whereTheImageGoes.appendChild(img)
+        console.log("asdfasdf")
+    }
+
+}
+
+function remove(){
+    let removePictures = document.getElementById(skata);
+    removePictures.remove();
 }
