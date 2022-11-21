@@ -133,6 +133,12 @@ table{
     width:100%;
     border-spacing: 1rem;
 }
+th{
+    /* TODO me auto menei sta8ero to width kai mono megalonei
+    pros ta kato. tora prepei na bazo perisoteres eikonew apo
+    ta lefta analoga me ta kermata!!!! auto ua to kano sthn javascript*/
+    width:3rem;
+}
 
 .bigCoins{
     width: 3rem;
