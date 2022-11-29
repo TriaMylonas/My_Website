@@ -144,9 +144,8 @@ function getMoney(){
 
 
 function showThe2Euro(a){
-
+    // if there is no 2€, then i need 1 for my site.
     if (a === 0){
-        
         showThe2Euro(1);
     }
     else{
