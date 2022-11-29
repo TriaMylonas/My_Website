@@ -11,8 +11,8 @@ enter.addEventListener("keypress", function(event){
     }});
 
 
+    // SPIEL NUMMER 1 ##############################################################################
 function doSomthingForThorsten(){
-    
     //nimmt die text vom der Nutzer
     const input = document.getElementById("userInput");
     // Variable für die output
@@ -76,10 +76,6 @@ function doSomthingForThorsten(){
 
 
 function getMoney(){
-    
-   
-    
-    const output2euro = document.getElementById("euro-2-output"); 
 
     const money = document.getElementById("item3-userInput");
     
@@ -91,8 +87,6 @@ function getMoney(){
     } 
     else{
 
-      
-        
         let euro2coins = 0;
         let euro1coins = 0;
         let cent50coins = 0;
@@ -107,10 +101,10 @@ function getMoney(){
         euro2coins = money.value / 200;
         let stringEuro2coins = euro2coins.toString().split(".")[0];
         restMoneyCoins = money.value % 200; 
-        //shows the amount of 2€ coins
-        output2euro.textContent = "x " + stringEuro2coins;
+        document.getElementById("euro-2-output").textContent = "x " + stringEuro2coins;
+        let nummerEuro2coins = parseInt(stringEuro2coins);
         
-        //1 euro coins
+        //1€ coins
         euro1coins = restMoneyCoins / 100;
         document.getElementById("euro-1-output").textContent ="x " + euro1coins.toString().split(".")[0];
         restMoneyCoins = restMoneyCoins % 100;
@@ -139,12 +133,9 @@ function getMoney(){
         cent1coins = restMoneyCoins / 1;
         document.getElementById("cents-1-output").textContent = "x " + cent1coins.toString().split(".")[0];
         restMoneyCoins = restMoneyCoins % 1;
-
-        console.log(euro2coins);
-        console.log(restMoneyCoins);
-        console.log(stringEuro2coins);
         
-        showThe2Euro(5);
+
+        showThe2Euro(nummerEuro2coins);
        
     }
 
@@ -153,21 +144,30 @@ function getMoney(){
 
 
 function showThe2Euro(a){
+
+    if (a === 0){
+        
+        showThe2Euro(1);
+    }
+    else{
+
+        // delete the alt images before i make again the new one.
+        // i do that with a while loop, until it hit the last child of the element, he will delet the first.
+        let images = document.getElementById('skata');
+        while(images.lastElementChild){
+            images.firstElementChild.remove();
+        }
     
-    for (let index = 0; index < a-1; index++) {
-        
-        let whereTheImageGoes = document.getElementById("skata");
-        let img = new Image();
-        img.src = "../pictures/2euro.png"
-        img.className = "bigCoins";
-        
-        whereTheImageGoes.appendChild(img)
-        console.log("asdfasdf")
+        // add the new image
+        for (let index = 0; index < a; index++) {
+            
+            let whereTheImageGoes = document.getElementById("skata");
+            let img = new Image();
+            img.src = "../pictures/2euro.png"
+            img.className = "bigCoins";
+            
+            whereTheImageGoes.appendChild(img)
+        }
     }
 
-}
-
-function remove(){
-    let removePictures = document.getElementById(skata);
-    removePictures.remove();
 }
