@@ -75,6 +75,18 @@ function doSomthingForThorsten(){
  * */
 
 
+
+// με αυτό τον τρόπο αν πατηθεί "Enter" στο κουτί εισαγωγής κειμένου θα εκτελεστεί η διαδικασία! 
+var enter = document.getElementById("item3-userInput");
+
+enter.addEventListener("keypress", function(event){
+    if(event.key === "Enter") {
+        // event.preventDefault; Das ist nur für Formular, damit nicht mit Enter das Formular gesendet wurde.
+        document.getElementById("submitBtnCoins").click();
+    }});
+
+
+
 function getMoney(){
 
     const money = document.getElementById("item3-userInput");
@@ -86,7 +98,7 @@ function getMoney(){
         money.value = " ";   
     } 
     else{
-
+        
         let euro2coins = 0;
         let euro1coins = 0;
         let cent50coins = 0;
@@ -102,40 +114,57 @@ function getMoney(){
         let stringEuro2coins = euro2coins.toString().split(".")[0];
         restMoneyCoins = money.value % 200; 
         document.getElementById("euro-2-output").textContent = "x " + stringEuro2coins;
-        let nummerEuro2coins = parseInt(stringEuro2coins);
-        
+        let numberEuro2coins = parseInt(stringEuro2coins);
+        // function to render the amount of coins
+        // function showTheCoins(numberOfCoins,whatCoin,pictureSource,pictureClass)
+        showTheCoins(numberEuro2coins, "euro2coin","../pictures/2euro.png","bigCoins");
+
+
         //1€ coins
         euro1coins = restMoneyCoins / 100;
-        document.getElementById("euro-1-output").textContent ="x " + euro1coins.toString().split(".")[0];
+        let stringEuro1coins = euro1coins.toString().split(".")[0];
+        document.getElementById("euro-1-output").textContent ="x " + stringEuro1coins;
         restMoneyCoins = restMoneyCoins % 100;
+        showTheCoins(parseInt(stringEuro1coins), "euro1coins", "../pictures/1-euro.png", "bigCoins")
 
         //50 Cents cois
         cent50coins = restMoneyCoins / 50;
-        document.getElementById("cents-50-output").textContent = "x " + cent50coins.toString().split(".")[0];
+        let stringCent50coins = cent50coins.toString().split(".")[0];
+        document.getElementById("cents-50-output").textContent = "x " + stringCent50coins;
         restMoneyCoins = restMoneyCoins % 50;
-
+        showTheCoins(parseInt(stringCent50coins), "cent50coins", "../pictures/50-euro-cent.png", "middleCoins")
+        
         cent20coins = restMoneyCoins / 20;
-        document.getElementById("cents-20-output").textContent = "x " + cent20coins.toString().split(".")[0];
+        let stringCent20coins = cent20coins.toString().split(".")[0];
+        document.getElementById("cents-20-output").textContent = "x " + stringCent20coins ;
         restMoneyCoins = restMoneyCoins % 20;
+        showTheCoins(parseInt(stringCent20coins), "cent20coins", "../pictures/20-euro-cent.png", "middleCoins")
 
         cent10coins = restMoneyCoins / 10;
-        document.getElementById("cents-10-output").textContent = "x " + cent10coins.toString().split(".")[0];
+        let stringCent10coins = cent10coins.toString().split(".")[0];
+        document.getElementById("cents-10-output").textContent = "x " + stringCent10coins;
         restMoneyCoins = restMoneyCoins % 10;
+        showTheCoins(parseInt(stringCent10coins), "cent10coins", "../pictures/10-euro-cent.png", "middleCoins")
 
         cent5coins = restMoneyCoins / 5;
-        document.getElementById("cents-5-output").textContent = "x " + cent5coins.toString().split(".")[0];
+        let stringcent5coins = cent50coins.toString().split(".")[0];
+        document.getElementById("cents-5-output").textContent = "x " + stringcent5coins;
         restMoneyCoins = restMoneyCoins % 5;
+        showTheCoins(parseInt(stringcent5coins), "cent5coins", "../pictures/five-euro-cent.png", "smallCoins")
 
         cent2coins = restMoneyCoins / 2;
-        document.getElementById("cents-2-output").textContent = "x " + cent2coins.toString().split(".")[0];
+        let stringCent2coins = cent2coins.toString().split(".")[0];
+        document.getElementById("cents-2-output").textContent = "x " + stringCent2coins;
         restMoneyCoins = restMoneyCoins % 2;
+        showTheCoins(parseInt(stringCent2coins), "cent2coins", "../pictures/two-euro-cent.png", "smallCoins")
 
         cent1coins = restMoneyCoins / 1;
-        document.getElementById("cents-1-output").textContent = "x " + cent1coins.toString().split(".")[0];
+        let stringCent1coins = cent1coins.toString().split(".")[0];
+        document.getElementById("cents-1-output").textContent = "x " + stringCent1coins;
         restMoneyCoins = restMoneyCoins % 1;
+        showTheCoins(parseInt(stringCent1coins), "cent1coins", "../pictures/one-euro-cent-colored.png", "smallCoins")
         
 
-        showThe2Euro(nummerEuro2coins);
        
     }
 
@@ -143,27 +172,27 @@ function getMoney(){
 }
 
 
-function showThe2Euro(a){
+function showTheCoins(numberOfCoins,whatCoin,pictureSource,pictureClass){
     // if there is no 2€, then i need 1 for my site.
-    if (a === 0){
-        showThe2Euro(1);
+    if (numberOfCoins === 0){
+        showTheCoins(1,whatCoin,pictureSource,pictureClass);
     }
     else{
 
         // delete the alt images before i make again the new one.
         // i do that with a while loop, until it hit the last child of the element, he will delet the first.
-        let images = document.getElementById('skata');
+        let images = document.getElementById(whatCoin);
         while(images.lastElementChild){
             images.firstElementChild.remove();
         }
     
         // add the new image
-        for (let index = 0; index < a; index++) {
+        for (let index = 0; index < numberOfCoins; index++) {
             
-            let whereTheImageGoes = document.getElementById("skata");
+            let whereTheImageGoes = document.getElementById(whatCoin);
             let img = new Image();
-            img.src = "../pictures/2euro.png"
-            img.className = "bigCoins";
+            img.src = pictureSource;
+            img.className = pictureClass;
             
             whereTheImageGoes.appendChild(img)
         }
