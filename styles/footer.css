@@ -34,5 +34,10 @@ footer h6 a:hover{
     background-color: var(--color-special-hovergray);
     border-radius: 8px;
     padding: .3ch .8ch;
-    box-shadow: 1px .5px currentColor;
+    /* box-shadow: 1px .5px currentColor; */
+}
+/* change the impressum styles */
+footer a:nth-child(2){
+    
+    color: rgb(88, 85, 85);
 }
