@@ -14,7 +14,7 @@
 }
 
 /* Start Submit button adjustments */
-#submitBtn{
+#submitBtn, #submitBtnCoins{
     background-color: #333333 ;
     color: #00FF00;
     font-weight: bold;
@@ -26,11 +26,11 @@
     
 }
 
-#submitBtn:hover{
+#submitBtn:hover, #submitBtnCoins:active{
     cursor: pointer;
 }
 
-#submitBtn:active{
+#submitBtn:active, #submitBtnCoins:active{
     /*οταν πατάω το κουμπί εξαφανίζεται η σκιά και φένεται σαν να πάτισα πραγματικό κουμπί!*/
     box-shadow: none;
    
@@ -135,14 +135,15 @@ table{
     color: rgb(12, 12, 12);
 }
 th{
-    /* TODO me auto menei sta8ero to width kai mono megalonei
-    pros ta kato. tora prepei na bazo perisoteres eikonew apo
-    ta lefta analoga me ta kermata!!!! auto ua to kano sthn javascript*/
     width:3rem;
+    vertical-align: bottom;
 }
+
+
 
 .bigCoins{
     width: 3rem;
+    
 }
 .middleCoins{
     width: 2.5rem; 
