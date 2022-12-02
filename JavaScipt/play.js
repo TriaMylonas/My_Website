@@ -147,7 +147,7 @@ function getMoney(){
         showTheCoins(parseInt(stringCent10coins), "cent10coins", "../pictures/10-euro-cent.png", "middleCoins")
 
         cent5coins = restMoneyCoins / 5;
-        let stringcent5coins = cent50coins.toString().split(".")[0];
+        let stringcent5coins = cent5coins.toString().split(".")[0];
         document.getElementById("cents-5-output").textContent = "x " + stringcent5coins;
         restMoneyCoins = restMoneyCoins % 5;
         showTheCoins(parseInt(stringcent5coins), "cent5coins", "../pictures/five-euro-cent.png", "smallCoins")
