@@ -109,9 +109,26 @@ function getMoney(){
 
         moneyValue;
         moneyValue = parseInt(moneyValue);
-        
         money.value = moneyValue3;
         
+    }
+    else if ((moneyValue).includes(".")){
+                // make it string so i play with komma
+                moneyValue = moneyValue.toString();
+        
+                // get only two digit after the komma 
+                moneyValue1 = moneyValue.split(".")[0];
+                moneyValue2 = moneyValue.split(".")[1];
+                moneyValue4 = moneyValue2.split("")[0];
+                moneyValue5 = moneyValue2.split("")[1];
+                moneyValue3 = moneyValue1 + "." + moneyValue4 + moneyValue5; 
+
+                moneyValue=(moneyValue3).replace(".","");
+        
+                moneyValue;
+                moneyValue = parseInt(moneyValue);
+                money.value = moneyValue3;
+                
     }
 
 
