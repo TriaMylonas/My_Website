@@ -91,14 +91,40 @@ function getMoney(){
 
     const money = document.getElementById("item3-userInput");
     
+    // i wonna change the "," to "." so they pass through the isNaN
+    let moneyValue = money.value;
+    
+    if((moneyValue).includes(",")){
+        
+        // make it string so i play with komma
+        moneyValue = moneyValue.toString();
+        
+        // get only two digit after the komma 
+        moneyValue1 = moneyValue.split(",")[0];
+        moneyValue2 = moneyValue.split(",")[1];
+        moneyValue4 = moneyValue2.split("")[0];
+        moneyValue5 = moneyValue2.split("")[1];
+        moneyValue3 = moneyValue1 + "," + moneyValue4 + moneyValue5; 
+        moneyValue=(moneyValue3).replace(",","");
+
+        moneyValue;
+        moneyValue = parseInt(moneyValue);
+        
+        money.value = moneyValue3;
+        
+    }
+
+
+
     // check users input
-    if (isNaN(money.value)){
+    if (isNaN(moneyValue)){
         alert("False input! \n You must write a number!")
         // set the value of the input field in default.
         money.value = " ";   
     } 
     else{
-        
+
+        // reset the images and the coins number    
         let euro2coins = 0;
         let euro1coins = 0;
         let cent50coins = 0;
@@ -110,9 +136,9 @@ function getMoney(){
         let restMoneyCoins = 0;
 
         // 2 euro coins
-        euro2coins = money.value / 200;
+        euro2coins = moneyValue / 200;
         let stringEuro2coins = euro2coins.toString().split(".")[0];
-        restMoneyCoins = money.value % 200; 
+        restMoneyCoins = moneyValue % 200; 
         document.getElementById("euro-2-output").textContent = "x " + stringEuro2coins;
         let numberEuro2coins = parseInt(stringEuro2coins);
         // function to render the amount of coins
