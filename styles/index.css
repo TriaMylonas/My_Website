@@ -1,49 +1,64 @@
-
-
-section{
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    min-height: 70vh;
-    margin-inline: auto;
-    justify-content: center;
-    max-width: 800px;
-    display: flex;
-    padding:0 1rem 0 1rem;
-    
+section {
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 70vh;
+  margin-inline: auto;
+  justify-content: center;
+  max-width: 800px;
+  display: flex;
+  padding: 0 1rem 0 1rem;
+  text-align: justify; /* Add this property for even distribution */
 }
-.main-div{
-    display: flex;
+.main-div {
+  display: flex;
 }
- /* εκανα αυτό το αντικείμενο μονο και μόνο για να κάνω να είναι δυναμικά τα γράμματα στο κέντρο περιπου της οθόνης! */
-.main-div article{
-    max-width: 15vw;
+/* εκανα αυτό το αντικείμενο μονο και μόνο για να κάνω να είναι δυναμικά τα γράμματα στο κέντρο περιπου της οθόνης! */
+.main-div article {
+  max-width: 15vw;
 }
 
-.main-div h1{
-    color: var(--color-writinggray);
-    font-size:calc(4ch + 0.5vw);
-    text-shadow: 2px 2px 5px var(--color-special-blue);
-    line-height: var(--line);
+.main-div h1 {
+  color: var(--color-writinggray);
+  font-size: calc(4ch + 0.5vw);
+  text-shadow: 2px 2px 5px var(--color-special-blue);
+  line-height: var(--line);
 }
 
-.main-div h3{
-    color: rgb(126, 121, 121);
-    font-size: calc(1.5ch + 0.5vw);
-    font-weight: 400;
+.main-div h2 {
+  color: rgb(126, 121, 121);
+  font-size: calc(1.5ch + 0.5vw);
+  font-weight: 400;
+  margin-bottom: 5rem; /* Add margin-bottom for spacing */
+  text-align: center;
 }
 /*the Schnellecke aanchor in the paragraf to change */
-p a{
-    color: var(--color-special-green);
-    text-decoration: none;
+p a {
+  color: var(--color-special-green);
+  text-decoration: none;
 }
 
 p a:hover {
-    color: var(--color-white);
-    background-color: var(--color-special-hovergray);
-    border-radius: 8px;
-    padding: .1ch .3ch;
-    box-shadow: 1px .5px currentColor;
+  color: var(--color-white);
+  background-color: var(--color-special-hovergray);
+  border-radius: 8px;
+  padding: 0.1ch 0.3ch;
+  box-shadow: 1px 0.5px currentColor;
+}
+
+.main-div h4 {
+  color: aliceblue;
+}
+
+h2,
+h3,
+h4 {
+  line-height: 1.6; /* Adjust the line height to your preference */
+  margin-top: 1rem; /* Add margin to the top for spacing */
+  margin-bottom: 0.5rem; /* Add margin to the bottom for spacing */
+  text-align: center;
+  display: inline-block; /* Add this property to enable vertical alignment */
+  vertical-align: middle; /* Add this property to center vertically */
 }

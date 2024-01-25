@@ -1,47 +1,42 @@
-
 /* Generall Settings */
 
 @font-face {
-    font-family: Roboto;
-    src: url("../Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+  font-family: Roboto;
+  src: url("../Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
 }
 
-:root{
-    
-    --color-special-blue: rgb(111, 190, 251);
-    --color-special-green: rgb(67, 205, 150);
-    --color-special-hovergray:rgba(131, 159, 187, .2);
-    --color-writinggray: rgba(199, 208, 235, 0.851);
-    --color-white: rgba(239, 239, 239, 0.882);
-    --color-black: rgba(21, 32, 40, 0.839);
-    --color-background: rgb(10, 25, 47);
-    --font: 'Roboto', 'Courier New', Courier, monospace;
-    --line: 2.5ch;
+:root {
+  --color-special-blue: rgb(111, 190, 251);
+  --color-special-green: rgb(67, 205, 150);
+  --color-special-hovergray: rgba(131, 159, 187, 0.2);
+  --color-writinggray: rgba(199, 208, 235, 0.851);
+  --color-white: rgba(239, 239, 239, 0.882);
+  --color-black: rgba(21, 32, 40, 0.839);
+  --color-background: rgb(10, 25, 47);
+  --font: "Roboto", "Courier New", Courier, monospace;
+  --line: 2.5ch;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--font);
-    font-weight: 300;
-    font-size: calc(1.3ch + 0.4vw);
-    line-height: var(--line);
-    color: var(--color-special-blue);
-    background-color: var(--color-background);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column; /* αλλάζει την φορά τον κυρίως στοιχείων, για να μπορώ να έχω τους τίτλους στο τέλος */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Courier New", Courier, monospace;
+  font-weight: 300;
+  font-size: calc(1.3ch + 0.4vw);
+  line-height: var(--line);
+  color: var(--color-special-blue);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* αλλάζει την φορά τον κυρίως στοιχείων, για να μπορώ να έχω τους τίτλους στο τέλος */
 }
 
 /* πηγαίνει ανάμεσα κεντρικό τμήμα και στο τελευταίο, με αποτέλεσμα 
     το footer να είναι πάντ αστο κάτω μέρος της σελίδας */
-article{
-    flex: 1;
+article {
+  flex: 1;
 }
-
-
-
