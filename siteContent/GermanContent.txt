@@ -1,0 +1,77 @@
+
+
+
+
+
+## Willkommen auf meiner Portfolio-Website!
+
+Hallo, mein Name ist Triantafyllos Mylonas, und seit dem 1. September 2021 tauche ich in die faszinierende Welt der Webentwicklung ein! 
+Derzeit absolviere ich eine Ausbildung als Fachinformatiker für Anwendungsentwicklung, dank der großartigen Gelegenheit, die mir die Firma Schnellecke bietet. 😉
+
+Der Computer ist nicht nur ein Arbeitsinstrument für mich, sondern ein etabliertes Mittel der Kommunikation. 
+Für mich ist Programmierung nicht nur ein Beruf, sondern auch ein Hobby. 
+Die Vielfalt der Anwendungsmöglichkeiten stellt für mich eine angenehme Herausforderung dar, der ich mich gerne stelle.
+Die Entscheidung, mich in diese Richtung zu entwickeln, entspringt dem Wunsch, einen persönlichen Traum zu verwirklichen. 
+Ich möchte meinen beruflichen Lebensunterhalt mit etwas tun, das mir wirklich gefällt und das ich jeden Tag mit Freude verfolge.
+Schau dich gerne um und entdecke mehr über meine Leidenschaft für die Webentwicklung und meine Reise in die Welt der Anwendungsentwicklung!
+ 
+------------------------------
+##### Über mich ##############
+Hier können Sie mehr über meine Projekte erfahren und sich einen detaillierten Überblick über meine Kompetenzen verschaffen. 
+Ich freue mich darauf, meine Leidenschaft und meine Fähigkeiten in ein zukünftiges berufliches Umfeld einzubringen!
+
+Mein Name ist Triantafyllos Mylonas, geboren am 25. Februar 1985. 
+Ich bin glücklich verheiratet und stolzer Vater eines wunderbaren Kindes. 
+Meine Freizeit verbringe ich am liebsten vor dem Computer, aber auch auf Reisen mit meiner Familie. 
+Eine gemütliche Tasse Kaffee in netter Gesellschaft schlage ich nie aus. 
+Ich bin ein Fan von Iron Man und generell des Marvel-Universums 😉 .
+
+
+## Erstes Jahr: Die Welt der Programmierung erobern
+Meine Reise in die IT-Welt begann im September 2021, als ich meine Ausbildung bei der Firma Schnellecke begann. 
+In den ersten drei Monaten im Service Desk sammelte ich wertvolle Erfahrungen, die meine Sichtweise auf Technologie verändert haben. 
+Im ersten Jahr konzentrierte ich mich darauf, die Grundlagen der Programmierung zu verstehen und erstellte einfache WPF-Anwendungen mit C#. 
+Ein Highlight in dieser Zeit war die Entwicklung einer Personalverwaltungsanwendung mit nützlichen Funktionen wie Hinzufügen, Löschen, Anzeigen, Aktualisieren und Speichern in einer CSV-Datei.
+
+
+## Zweites Jahr: Expansion in die Welt des Webs
+Im zweiten Ausbildungsjahr vertiefte ich meine Kenntnisse in der Entwicklung von WPF-Anwendungen mit C#. 
+Ich entwickelte eine Anwendung, die Barcodes dynamisch aus vom Benutzer eingegebenem Text erzeugt und diese in ein PDF-Dokument einbettet. 
+Diese Erfahrung half mir zu verstehen, wie leistungsfähig und flexibel C# für die Entwicklung schneller und fortschrittlicher Anwendungen ist. 
+Danach tauchte ich in die Welt der Webentwicklung ein und lernte die Grundlagen von HTML, CSS und JavaScript. 
+Diese Wissenserweiterung war wichtig, da sie mich dazu brachte, meine eigene Website als persönliches Projekt zu erstellen. 
+Dieses Projekt diente nicht nur als Testfeld, sondern auch als praktische Anwendung meiner neuen Kenntnisse. 
+Durch diesen Prozess habe ich verstanden, wie HTML, CSS und JavaScript kombiniert werden können, um dynamische und effektive Websites zu erstellen.
+
+
+## Drittes Jahr: Spannende Erkundung von Java und Spring Boot
+Im dritten Jahr meiner Ausbildung habe ich mich neben der Programmierung weiter auf Java und objektorientierte Programmierung (OOP) spezialisiert. 
+Ich entwickelte eine Desktop-Anwendung in Java, die Excel-Dateien vergleicht und Lösungen für praktische Geschäftsanforderungen bietet. 
+Auf meinem Weg spezialisierte ich mich weiter auf Webanwendungen, eine spannende Reise.
+Mit Freude und Hingabe erkundete ich die Welt der Webentwicklung und erstellte Webanwendungen in Java mit Spring Boot und Maven. 
+Auf dieser Reise, die sowohl das Frontend als auch das Backend mit dem MVC Architekturmodell umfasste, lernte ich JPA, Thymeleaf, Bootstrap, Spring Security, Lombok und andere Tools kennen. 
+Das Ergebnis waren zwei Anwendungen, die Geschick und Innovation widerspiegeln und funktionale und flexible Online-Umgebungen bieten.
+
+
+## Gegenwart: Vorbereitung auf das Abschlussprojekt
+Ich befinde mich jetzt in der Vorbereitungsphase für mein Abschlussprojekt. 
+Ein weiteres Kapitel auf dieser Bildungsreise, die Wissen, Kreativität und praktische Anwendung verbindet. 
+
+####Ich bin bereit, meine Fähigkeiten unter Beweis zu stellen und einen Beitrag zur modernen Innovation zu leisten.
+
+
+## Fortschritte in der Ausbildung und Ergänzungen in der Schule
+Neben der Ausbildung im Betrieb wird mein Weg in die Programmierung durch die Ausbildung in der Berufsschule bereichert. 
+Dort habe ich die Möglichkeit, spannende Themen zu erforschen und mich in neue Technologien einzuarbeiten. 
+Von der Programmierung in Fachsprachen bis hin zur Analyse von Algorithmen - die Berufsschule hat mir zusätzliche Kenntnisse vermittelt, die meine wissenschaftliche Herangehensweise an die Programmierung stärken. 
+Diese parallele Ausbildung ist ein wichtiger Teil meiner Karriere und gibt mir ein breites Spektrum an Wissen und Ansätzen. 
+All diese Erfahrungen und Lektionen bilden einen reichen Hintergrund, der meine Fähigkeit stärkt, innovative Lösungen in der Welt der Technologie zu schaffen.
+
+
+
+
+------------------------------
+##### Projekte ##############
+
+
+

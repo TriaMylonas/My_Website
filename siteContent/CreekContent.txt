@@ -1,5 +1,7 @@
-Willkommen auf meiner Portfolio-Website!
 
+
+
+## Willkommen auf meiner Portfolio-Website!
 
 Hallo, mein Name ist Triantafyllos Mylonas, und seit dem 1. September 2021 tauche ich in die faszinierende Welt der Webentwicklung ein! 
 Derzeit absolviere ich eine Ausbildung als Fachinformatiker für Anwendungsentwicklung, dank der großartigen Gelegenheit, die mir die Firma Schnellecke bietet. 😉
@@ -11,9 +13,12 @@ Die Entscheidung, mich in diese Richtung zu entwickeln, entspringt dem Wunsch, e
 Ich möchte meinen beruflichen Lebensunterhalt mit etwas tun, das mir wirklich gefällt und das ich jeden Tag mit Freude verfolge.
 Schau dich gerne um und entdecke mehr über meine Leidenschaft für die Webentwicklung und meine Reise in die Welt der Anwendungsentwicklung!
  
-Εδώ μπορείτε να μάθετε περισσότερα για τα έργα μου και να πάρετε μια λεπτομερή εικόνα των δεξιοτήτων μου. Ανυπομονώ να εφαρμόσω το πάθος και τις δεξιότητές μου σε ένα μελλοντικό επαγγελματικό περιβάλλον!
 
-## Σχετικά με εμένα
+########
+Εδώ μπορείτε να μάθετε περισσότερα για τα έργα μου και να πάρετε μια λεπτομερή εικόνα των δεξιοτήτων μου. 
+Ανυπομονώ να εφαρμόσω το πάθος και τις δεξιότητές μου σε ένα μελλοντικό επαγγελματικό περιβάλλον!
+
+## Σχετικά με εμένα 
 Γεια σας, είμαι ο Τριαντάφυλλος Μύλωνας, γεννήθηκα στις 25 Φεβρουαρίου 1985. Είμαι χαρούμενα παντρεμένος και περήφανος πατέρας ενός υπέροχου παιδιού. 
 Συνηθίζω να περνώ χρόνο μπροστά στον υπολογιστή, αλλά επίσης απολαμβάνω τα ταξίδια με την οικογένειά μου. 
 Ένα ζεστό καφέ σε καλή παρέα δεν το αρνούμαι ποτέ. Είμαι λάτρης του Iron Man και γενικότερα του κόσμου της Marvel. 😉
@@ -52,3 +57,11 @@ Schau dich gerne um und entdecke mehr über meine Leidenschaft für die Webentwi
 Από προγραμματισμό με εξειδικευμένες γλώσσες μέχρι και ανάλυση αλγορίθμων, η σχολή με έχει εξοπλίσει με πρόσθετες γνώσεις που ενισχύουν την επιστημονική μου προσέγγιση στον χώρο του προγραμματισμού.
 Αυτή η παράλληλη πορεία εκπαίδευσης συνιστά ένα σημαντικό κομμάτι της πορείας μου, προσδίδοντας ένα ευρύ φάσμα γνώσεων και προσεγγίσεων. 
 Το σύνολο αυτό των εμπειριών και των μαθημάτων συνθέτει ένα πλούσιο υπόβαθρο που ενισχύει τη δυνατότητά μου να δημιουργώ καινοτόμες λύσεις στον κόσμο της τεχνολογίας.
+
+##########
+Τα εργα μου.
+
+3 εικόνες το καθένα και λίγα σχόλεια απο κάτω.
+
+
+
