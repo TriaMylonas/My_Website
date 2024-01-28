@@ -1,43 +1,42 @@
-
-
-.footer{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 2vh 2vh;
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 2vh 2vh;
 }
 
-.footer > ul > li{
-    display: inline;
-    margin: 0em;
-    padding: 0.2vw;
+.footer > ul > li {
+  display: inline;
+  margin: 0em;
+  padding: 0.2vw;
 }
 
 /* τα γράμματα και η λίστα να είναι τέρμα κάτω,δεν θα έχουν margin
 και τα γράμματα δεν θα είναι τόσο έντονα.*/
-footer h6, ul{
-    margin: 0px;
-    font-weight: 300;
+footer h6,
+ul {
+  margin: 0px;
+  font-weight: 300;
+  font-size: calc(0.6ch + 0.4vw);
 }
 /* το μέγεθος των εικόνων */
-footer img{
-    width: calc(1rem + 0.5vh);
+footer img {
+  width: calc(1rem + 0.5vh);
 }
 /* αλλάζω το link */
-footer h6 a{
-    color: var(--color-special-green);
-    text-decoration: none;
+footer h6 a {
+  color: var(--color-special-green);
+  text-decoration: none;
 }
 /* κανω την αλητεία όταν πάει ο κέρσορας πάνω απο το όνομά μου */
-footer h6 a:hover{
-    color: var(--color-white);
-    background-color: var(--color-special-hovergray);
-    border-radius: 8px;
-    padding: .3ch .8ch;
-    /* box-shadow: 1px .5px currentColor; */
+footer h6 a:hover {
+  color: var(--color-white);
+  background-color: var(--color-special-hovergray);
+  border-radius: 8px;
+  padding: 0.3ch 0.8ch;
+  /* box-shadow: 1px .5px currentColor; */
 }
 /* change the impressum styles */
-footer a:nth-child(2){
-    
-    color: rgb(88, 85, 85);
+footer a:nth-child(2) {
+  color: rgb(88, 85, 85);
 }
