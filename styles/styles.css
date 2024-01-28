@@ -31,7 +31,6 @@ body {
   color: var(--color-special-blue);
   background-color: var(--color-background);
   min-height: 100vh;
-  display: flex;
   flex-direction: column; /* αλλάζει την φορά τον κυρίως στοιχείων, για να μπορώ να έχω τους τίτλους στο τέλος */
 }
 
@@ -39,4 +38,137 @@ body {
     το footer να είναι πάντ αστο κάτω μέρος της σελίδας */
 article {
   flex: 1;
+}
+
+.about-p {
+  color: var(--color-writinggray);
+  line-height: 3ch;
+  font-size: calc(1.1ch + 0.4vw);
+}
+
+.about-name-and-foto {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; /* Add this line to align items in a column */
+  text-align: center; /* Add this line to center-align text */
+}
+
+h1 {
+  line-height: var(--line);
+}
+
+.about-foto {
+  width: calc(15% + 0.5vw);
+  height: auto;
+  border-radius: 45%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 5rem; /* Add margin-bottom for spacing */
+  opacity: 0.6;
+}
+.about-name-and-foto h1 {
+  font-size: calc(3ch + 0.4vw);
+}
+
+/* in that way can all the text in the middle stay */
+section {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 0 1rem 0 1rem;
+}
+
+section {
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 70vh;
+  margin-inline: auto;
+  justify-content: center;
+  max-width: 800px;
+  display: flex;
+  padding: 0 1rem 0 1rem;
+  text-align: justify; /* Add this property for even distribution */
+}
+
+/* εκανα αυτό το αντικείμενο μονο και μόνο για να κάνω να είναι δυναμικά τα γράμματα στο κέντρο περιπου της οθόνης! */
+.main-div article {
+  max-width: 15vw;
+}
+
+.main-div h1 {
+  color: var(--color-writinggray);
+  font-size: calc(4ch + 0.5vw);
+  text-shadow: 2px 2px 5px var(--color-special-blue);
+  line-height: var(--line);
+}
+
+.main-div h2 {
+  color: rgb(126, 121, 121);
+  font-size: calc(1.5ch + 0.5vw);
+  font-weight: 400;
+  margin-bottom: 5rem; /* Add margin-bottom for spacing */
+  text-align: center;
+}
+/*the Schnellecke aanchor in the paragraf to change */
+p a {
+  color: var(--color-special-green);
+  text-decoration: none;
+}
+
+p a:hover {
+  color: var(--color-white);
+  background-color: var(--color-special-hovergray);
+  border-radius: 8px;
+  padding: 0.1ch 0.3ch;
+  box-shadow: 1px 0.5px currentColor;
+}
+
+.main-div h4 {
+  color: aliceblue;
+}
+
+h2,
+h3,
+h4 {
+  line-height: 1.6; /* Adjust the line height to your preference */
+  margin-top: 1rem; /* Add margin to the top for spacing */
+  margin-bottom: 0.5rem; /* Add margin to the bottom for spacing */
+  text-align: center;
+  display: inline-block; /* Add this property to enable vertical alignment */
+  vertical-align: middle; /* Add this property to center vertically */
+}
+
+/* Update the styles for the specific section */
+.section-with-greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh; /* Adjust this value based on your needs */
+}
+
+.section-with-greeting h1 {
+  line-height: var(--line);
+  margin: 0; /* Remove default margin for h1 */
+}
+
+.section-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh; /* Adjust this value based on your needs */
+}
+
+.section-my-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh; /* Adjust this value based on your needs */
 }

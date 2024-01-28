@@ -16,11 +16,14 @@
     <meta property="og:image" content="./pictures/Logo1.png" alt="Triantafyllos Mylonas Logo">
 
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="../styles/styles.css">
     <link type="text/css" rel="stylesheet" href="../styles/header.css">
     <link type="text/css" rel="stylesheet" href="../styles/footer.css">
     <link type="text/css" rel="stylesheet" href="../styles/index.css">
     <link type="text/css" rel="stylesheet" href="../styles/about.css">
+
 
     <title>Triantafyllos Mylonas</title>
 </head>
@@ -41,143 +44,231 @@
                 </li>
 
                 <li>
-                    <a href="#project"><span>02.</span> meine Arbeit</a>
+                    <a href="#myWork"><span>02.</span> meine Arbeit</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div class="main-div">
-        <section>
-            Hi, meine Name ist
-            <h1>Triantafyllos Mylonas 👋</h1>
+    <div class="main-div container">
 
-            <div class="about-name-and-foto">
-                <img class="about-foto" src="../pictures/TriaMyl_Foto.2.1.jpg" alt="Triantafyllos Mylonas Foto">
+
+        <section class="section-with-greeting text-center">
+            <div class="m-5">
+                Hi, meine Name ist
             </div>
 
-            <h2>Willkommen auf meiner Portfolio-Website!</h2>
-            <p class="first-p">
-                Hallo, mein Name ist Triantafyllos Mylonas, und seit dem 1. September 2021 tauche ich in die
-                faszinierende Welt der Webentwicklung ein!
-                Derzeit absolviere ich eine Ausbildung als Fachinformatiker für Anwendungsentwicklung, dank der
-                großartigen Gelegenheit, die mir die Firma
-                <a href="https://www.schnellecke.com/" target="_blank">
-                    Schnellecke
-                </a>
-                bietet. 😉
-            </p>
-            <p>
-                Der Computer ist nicht nur ein Arbeitsinstrument für mich, sondern ein etabliertes Mittel der
-                Kommunikation.
-                Für mich ist Programmierung nicht nur ein Beruf, sondern auch ein Hobby.
-                Die Vielfalt der Anwendungsmöglichkeiten stellt für mich eine angenehme Herausforderung dar, der ich
-                mich gerne stelle.
-                Die Entscheidung, mich in diese Richtung zu entwickeln, entspringt dem Wunsch, einen persönlichen Traum
-                zu verwirklichen.
-                Ich möchte meinen beruflichen Lebensunterhalt mit etwas tun, das mir wirklich gefällt und das ich jeden
-                Tag mit Freude verfolge.
-                Schau dich gerne um und entdecke mehr über meine Leidenschaft für die Webentwicklung und meine Reise in
-                die Welt der Anwendungsentwicklung!
-            </p>
+            <div class="h1 row">
+                <div class="col-md-11 mx-auto">
+                    Triantafyllos Mylonas
+                </div>
+                <div class="col-md-1">
+                    👋
+                </div>
+            </div>
 
-            <div style="margin: 10%;"></div>
 
-            <h2 id="aboutMe">Über mich</h2>
+            <div class="row my-5 justify-content-center align-items-center">
+                <div class="col-md-6 d-flex align-items-center">
+                    <h2 class="mb-3 text-md-right text-center">Willkommen auf meiner Portfolio-Website!</h2>
+                </div>
+                <div class="col-md-6 d-flex align-items-center text-center">
+                    <img class="img-fluid rounded mx-md-auto" style="max-width:45%"
+                        src="../pictures/TriaMyl_Foto.2.1.jpg" alt="Triantafyllos Mylonas Foto">
+                </div>
+                <p class="my-5 first-p">
+                    seit dem 1. September 2021 tauche ich in die
+                    faszinierende Welt der Fachinformatiker als Anwendungsentwicklung ein!
+                </p>
 
-            <p>
-                Hier können Sie mehr über meine Projekte erfahren und sich einen detaillierten Überblick über meine
-                Kompetenzen verschaffen.
-                Ich freue mich darauf, meine Leidenschaft und meine Fähigkeiten in ein zukünftiges berufliches Umfeld
-                einzubringen!
-            </p>
-
-            <p>
-                Triantafyllos Mylonas, geboren am 25. Februar 1985.
-                Ich bin glücklich verheiratet und stolzer Vater eines wunderbaren Kindes.
-                Meine Freizeit verbringe ich am liebsten vor dem Computer, aber auch auf Reisen mit meiner Familie.
-                Eine gemütliche Tasse Kaffee in netter Gesellschaft schlage ich nie aus.
-                Ich bin ein Fan von Iron Man und generell des Marvel-Universums 😉 .
-            </p>
-
-            <p>
-            <h4>
-                Erstes Jahr: Die Welt der Programmierung erobern
-            </h4>
-            Meine Reise in die IT-Welt begann im September 2021, als ich meine Ausbildung bei der Firma Schnellecke
-            begann.
-            In den ersten drei Monaten im Service Desk sammelte ich wertvolle Erfahrungen, die meine Sichtweise auf
-            Technologie verändert haben.
-            Im ersten Jahr konzentrierte ich mich darauf, die Grundlagen der Programmierung zu verstehen und
-            erstellte
-            einfache WPF-Anwendungen mit C#.
-            Ein Highlight in dieser Zeit war die Entwicklung einer Personalverwaltungsanwendung mit nützlichen
-            Funktionen wie Hinzufügen, Löschen, Anzeigen, Aktualisieren und Speichern in einer CSV-Datei.
-            </p>
-
-            <p>
-            <h4>
-                Zweites Jahr: Expansion in die Welt des Webs
-            </h4>
-            Im zweiten Ausbildungsjahr vertiefte ich meine Kenntnisse in der Entwicklung von WPF-Anwendungen mit C#.
-            Ich entwickelte eine Anwendung, die Barcodes dynamisch aus vom Benutzer eingegebenem Text erzeugt und diese
-            in ein PDF-Dokument einbettet.
-            Diese Erfahrung half mir zu verstehen, wie leistungsfähig und flexibel C# für die Entwicklung schneller und
-            fortschrittlicher Anwendungen ist.
-            Danach tauchte ich in die Welt der Webentwicklung ein und lernte die Grundlagen von HTML, CSS und
-            JavaScript.
-            Diese Wissenserweiterung war wichtig, da sie mich dazu brachte, meine eigene Website als persönliches
-            Projekt zu erstellen.
-            Dieses Projekt diente nicht nur als Testfeld, sondern auch als praktische Anwendung meiner neuen Kenntnisse.
-            Durch diesen Prozess habe ich verstanden, wie HTML, CSS und JavaScript kombiniert werden können, um
-            dynamische und effektive Websites zu erstellen.
-            </p>
-
-            <p>
-            <h4>
-                Drittes Jahr: Spannende Erkundung von Java und Spring Boot
-            </h4>
-            Im dritten Jahr meiner Ausbildung habe ich mich neben der Programmierung weiter auf Java und
-            objektorientierte Programmierung (OOP) spezialisiert.
-            Ich entwickelte eine Desktop-Anwendung in Java, die Excel-Dateien vergleicht und Lösungen für praktische
-            Geschäftsanforderungen bietet.
-            Auf meinem Weg spezialisierte ich mich weiter auf Webanwendungen, eine spannende Reise.
-            Mit Freude und Hingabe erkundete ich die Welt der Webentwicklung und erstellte Webanwendungen in Java mit
-            Spring Boot und Maven.
-            Auf dieser Reise, die sowohl das Frontend als auch das Backend mit dem MVC Architekturmodell umfasste,
-            lernte ich JPA, Thymeleaf, Bootstrap, Spring Security, Lombok und andere Tools kennen.
-            Das Ergebnis waren zwei Anwendungen, die Geschick und Innovation widerspiegeln und funktionale und flexible
-            Online-Umgebungen bieten.
-            </p>
-            Ich bin bereit, meine Fähigkeiten unter Beweis zu stellen und einen Beitrag zur modernen Innovation zu
-            leisten.
-            <p>
-            <h4>
-                Fortschritte in der Ausbildung und Ergänzungen in der Schule
-            </h4>
-            Neben der Ausbildung im Betrieb wird mein Weg in die Programmierung durch die Ausbildung in der Berufsschule
-            bereichert.
-            Dort habe ich die Möglichkeit, spannende Themen zu erforschen und mich in neue Technologien einzuarbeiten.
-            Von der Programmierung in Fachsprachen bis hin zur Analyse von Algorithmen - die Berufsschule hat mir
-            zusätzliche Kenntnisse vermittelt, die meine wissenschaftliche Herangehensweise an die Programmierung
-            stärken.
-            Diese parallele Ausbildung ist ein wichtiger Teil meiner Karriere und gibt mir ein breites Spektrum an
-            Wissen und Ansätzen.
-            All diese Erfahrungen und Lektionen bilden einen reichen Hintergrund, der meine Fähigkeit stärkt, innovative
-            Lösungen in der Welt der Technologie zu schaffen.
-
-            </p>
-
-            <h2 id="project">Projekte</h2>
+            </div>
         </section>
+
+        <article style="margin-top: 15rem;">
+        </article>
+
+
+        <section id="aboutMe" class="section-about-me text-center">
+
+            <h3 class="my-5">Über mich</h3>
+
+            <div class="row text-justify">
+                <div class="col-md-6 p-4 ">
+                    Der Computer ist nicht nur ein Arbeitsinstrument für mich, sondern ein etabliertes Mittel der
+                    Kommunikation.
+                    Programmierung ist nicht nur ein Beruf, sondern auch mein Hobby. Ich liebe die Vielfalt der
+                    Anwendungsmöglichkeiten und sehe dies als angenehme Herausforderung. Meine Entscheidung, mich in
+                    diese
+                    Richtung zu entwickeln, entspringt dem Wunsch, einen persönlichen Traum zu verwirklichen.
+                </div>
+
+                <div class="col-md-6 p-4">
+
+                    Triantafyllos Mylonas, geboren am 25. Februar 1985. Glücklich verheiratet und stolzer Vater eines
+                    wunderbaren Kindes. Meine Freizeit verbringe ich am liebsten vor dem Computer, aber auch auf Reisen
+                    mit
+                    meiner Familie. Eine gemütliche Tasse Kaffee in netter Gesellschaft schlage ich nie aus. Ich bin ein
+                    Fan
+                    von
+                    Iron Man und generell des Marvel-Universums 😉.
+                </div>
+            </div>
+
+            <div>
+                <h2 style="margin-top: 10rem;">Meine Reise in die IT-Welt</h2>
+            </div>
+
+            <div class="img ">
+                <img class="img-fluid rounded mx-md-auto rounded-circle" style="max-width:35%; opacity: 0.5;"
+                    src="./pictures/it-journey.jpg" alt="it-journey">
+            </div>
+
+            <div>
+                <h6 style="  margin-top: 4rem; text-align: left !important;">
+                    Erstes Jahr: Die Welt der Programmierung erobern
+                </h6>
+
+                <p class="text-justify">
+                    Meine Reise in die IT-Welt begann im September 2021 bei der Firma Schnellecke. In den ersten drei
+                    Monaten im Service Desk sammelte ich wertvolle Erfahrungen. Im Fokus des ersten Jahres standen die
+                    Grundlagen der Programmierung und die Entwicklung einfacher WPF-Anwendungen mit C#. Ein Highlight
+                    war
+                    die Personalverwaltungsanwendung mit Funktionen wie Hinzufügen, Löschen, Anzeigen, Aktualisieren und
+                    Speichern in einer CSV-Datei.
+                </p>
+            </div>
+
+
+
+            <div>
+                <h6 style="  margin-top: 4rem; text-align: left !important;">
+                    Zweites Jahr: Expansion in die Welt des Webs
+                </h6>
+
+                <p class="text-justify">
+                    Im zweiten Ausbildungsjahr vertiefte ich meine Kenntnisse in der Entwicklung von WPF-Anwendungen mit
+                    C# und entwickelte eine Anwendung, die Barcodes dynamisch aus vom Benutzer eingegebenem Text
+                    erzeugt. Danach tauchte ich in die Welt der Webentwicklung ein, erlernte HTML, CSS und JavaScript,
+                    und nutzte dieses Wissen für mein persönliches Projekt – die Erstellung meiner eigenen Website.
+                </p>
+            </div>
+
+
+
+            <div>
+                <h6 style="  margin-top: 4rem; text-align: left !important;">
+                    Drittes Jahr: Spannende Erkundung von Java und Spring Boot
+                </h6>
+
+                <p class="text-justify">
+                    Im dritten Jahr spezialisierte ich mich weiter auf Java und Objektorientierte Programmierung (OOP).
+                    Ich entwickelte eine Desktop-Anwendung in Java und tauchte intensiv in die Webentwicklung ein. Dabei
+                    kamen Technologien wie JPA, Thymeleaf, Bootstrap, Spring Security, Lombok und anderen zum Einsatz.
+                    Das
+                    Ergebnis waren zwei innovative Webanwendungen, die meine Leidenschaft für die Technologie
+                    widerspiegeln.
+                </p>
+            </div>
+
+
+            <div>
+                <h6 style="  margin-top: 4rem; text-align: left !important;">
+                    Fortschritte in der Ausbildung und Ergänzungen in der Schule
+                </h6>
+
+                <p class="text-justify">
+                    Neben der Ausbildung im Betrieb wird mein Weg in die Programmierung durch die Ausbildung in der
+                    Berufsschule bereichert. Von der Programmierung in Fachsprachen bis hin zur Analyse von Algorithmen
+                    – die Berufsschule hat mir zusätzliche Kenntnisse vermittelt und meine wissenschaftliche
+                    Herangehensweise an die Programmierung gestärkt.
+                </p>
+            </div>
+
+            <div>
+                <h6 style="  margin-top: 4rem; text-align: left !important;">
+                    Entdecke mehr!
+                </h6>
+
+                <p class="text-justify">
+                    Schau dich gerne um und entdecke mehr über meine Leidenschaft für die Webentwicklung und meine Reise
+                    in die Welt der Anwendungsentwicklung!
+                </p>
+            </div>
+        </section>
+
+        <article style="margin-top: 15rem;">
+        </article>
+
+
+        <section id="myWork" class="section-my-work">
+            <h3 class="my-5">Meine Arbeit</h3>
+
+            <div class="img ">
+                <img class="img-fluid rounded mx-md-auto rounded-circle" style="max-width:35%; opacity: 0.5;"
+                    src="./pictures/image.png" alt="it-journey">
+            </div>
+
+            <p class="text-justify" style="margin-top: 2rem;   font-size: calc(0.8ch + 0.4vw)">
+                Im Rahmen meiner Ausbildung habe ich zwei Projekte für das Unternehmen durchgeführt, die ich
+                hier vorstelle, um meine Erfahrungen und Fähigkeiten weiterzugeben. Diese Projekte stellen das geistige
+                Eigentum von Schnellecke Logistics dar.
+            </p>
+
+            <div class="row">
+
+
+                <div class="col-md-6 px-4">
+                    <h6 style="  margin-top: 8rem; margin-bottom: 2rem;">
+                        Add BArcode to PDF
+                    </h6>
+
+                    <p class="text-justify">
+                        Ein Programm (WPF, C#), das es ermöglicht, Barcodes in PDF-Dokumente einzufügen, ohne dass die
+                        Dokumente
+                        manuell geändert werden können, wenn der Benutzer die Barcodes eingibt und speichert.
+                    </p>
+
+                    <img class="img-fluid rounded mx-md-auto" style="max-width:100%; opacity: 0.9; margin-top: 1rem;"
+                        src="./pictures/barcode.png" alt="program image">
+                </div>
+
+
+                <div class="col-md-6 px-4">
+                    <h6 style="  margin-top: 8rem; margin-bottom: 2rem;">
+                        Excel Bestandsvergleich
+                    </h6>
+
+                    <p class="text-justify">
+                        Ein Programm (Desk-App, Java), das es ermöglicht, zwei Excel-Dateien einfügt und vergleicht. Als
+                        nächste ein
+                        dritte Excel erstellt, indem nur die unterschiedlichen Daten von die zwei Excel zeigt und kann
+                        auch diese speichern.
+                    </p>
+
+                    <img class="img-fluid rounded mx-md-auto" style="max-width:105%; opacity: 0.9; margin-top: 1rem;"
+                        src="./pictures/excel.png" alt="program image">
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
     </div>
+
+
+
 
 
 
     <!-- Αυτό γεμίζει το κενό ανάμεσα σε όλα τα παραπάνω, με αποτέλεσμα το footer της σελίδας 
         να είναι πάντα sτο κάτω μέρος της σελίδας -->
     <article>
-
     </article>
 
 
@@ -192,8 +283,8 @@
                             alt="github logo" width="30px"></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="./pictures/linkedin.png"
-                            alt="linkedin logo" width="30px"></a>
+                    <a href="https://www.linkedin.com/in/triantafyllos-mylonas/" target="_blank"><img
+                            src="./pictures/linkedin.png" alt="linkedin logo" width="30px"></a>
                 </li>
             </ul>
         </div>
