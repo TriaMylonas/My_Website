@@ -1,302 +1,368 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fachinformatiker für Anwendungsentwicklung">
-    <meta name="keywords" content="Triantafyllos, Mylonas, Fachinformatiker, Anwendungsentwicklung, Schnellecke">
-    <meta property="og:description" content="Triantafyllos Mylonas Website.">
-    <meta property="og:titel" content="Triantafyllos Mylonas">
-    <meta property="og:locale" content="de_DE">
+    <meta name="description" content="Triantafyllos Mylonas – Application Developer Portfolio. Java, C#, Spring Boot, Web Development.">
+    <meta property="og:title" content="Triantafyllos Mylonas">
+    <meta property="og:description" content="Application Developer specializing in Java, C#, and web technologies.">
+    <meta property="og:url" content="https://www.triamylo.dev/">
+    <meta property="og:image" content="./pictures/Logo1.png">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.triamylo.dev//">
-    <meta property="og:site_name" content="Triantafyllos Mylonas">
-    <meta property="og:image" content="./pictures/Logo1.png" alt="Triantafyllos Mylonas Logo">
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="../styles/styles.css">
-    <link type="text/css" rel="stylesheet" href="../styles/header.css">
-    <link type="text/css" rel="stylesheet" href="../styles/index.css">
-    <link type="text/css" rel="stylesheet" href="../styles/about.css">
-    <link type="text/css" rel="stylesheet" href="../styles/footer.css">
-
-
     <title>Triantafyllos Mylonas</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/portfolio.css">
 </head>
-
-
 <body>
-
-    <!-- the header of all the pages  -->
-    <header>
-        <nav class="navigation-bar">
-            <a href="index.html">
-                <img id="logo" src="./pictures/Logo1.png" alt="Triantafyllos Mylonas Logo">
-            </a>
-
-            <ul>
-                <li>
-                    <a href="#aboutMe"><span>01.</span> über mich selbst</a>
-                </li>
-
-                <li>
-                    <a href="#myWork"><span>02.</span> meine Arbeit</a>
-                </li>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">TM</a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about"><span class="nav-num">01.</span> <span data-i18n="nav-about">About</span></a></li>
+                <li><a href="#skills"><span class="nav-num">02.</span> <span data-i18n="nav-skills">Skills</span></a></li>
+                <li><a href="#projects"><span class="nav-num">03.</span> <span data-i18n="nav-projects">Projects</span></a></li>
+                <li><a href="#contact"><span class="nav-num">04.</span> <span data-i18n="nav-contact">Contact</span></a></li>
             </ul>
-        </nav>
-    </header>
-
-    <div class="main-div container">
-
-
-        <section class="section-with-greeting text-center">
-            <div class="m-5">
-                Hi, meine Name ist
-            </div>
-
-            <div class="h1 row">
-                <div class="col-md-11 mx-auto">
-                    Triantafyllos Mylonas
-                </div>
-                <div class="col-md-1">
-                    👋
-                </div>
-            </div>
-
-
-            <div class="row my-5 justify-content-center align-items-center">
-                <div class="col-md-6 d-flex align-items-center">
-                    <h2 class="mb-3 text-md-right text-center">Willkommen auf meiner Portfolio-Website!</h2>
-                </div>
-                <div class="col-md-6 d-flex align-items-center text-center">
-                    <img class="img-fluid rounded mx-md-auto" style="max-width:45%"
-                        src="../pictures/TriaMyl_Foto.2.1.jpg" alt="Triantafyllos Mylonas Foto">
-                </div>
-                <p class="my-5 first-p">
-                    seit dem 1. September 2021 tauche ich in die
-                    faszinierende Welt der Fachinformatiker als Anwendungsentwicklung ein!
-                </p>
-
-            </div>
-        </section>
-
-        <article style="margin-top: 15rem;">
-        </article>
-
-
-        <section id="aboutMe" class="section-about-me text-center">
-
-            <h3 class="my-5">Über mich</h3>
-
-            <div class="row text-justify">
-                <div class="col-md-6 p-4 ">
-                    Der Computer ist nicht nur ein Arbeitsinstrument für mich, sondern ein etabliertes Mittel der
-                    Kommunikation.
-                    Programmierung ist nicht nur ein Beruf, sondern auch mein Hobby. Ich liebe die Vielfalt der
-                    Anwendungsmöglichkeiten und sehe dies als angenehme Herausforderung. Meine Entscheidung, mich in
-                    diese
-                    Richtung zu entwickeln, entspringt dem Wunsch, einen persönlichen Traum zu verwirklichen.
-                </div>
-
-                <div class="col-md-6 p-4">
-
-                    Triantafyllos Mylonas, geboren am 25. Februar 1985. Glücklich verheiratet und stolzer Vater eines
-                    wunderbaren Kindes. Meine Freizeit verbringe ich am liebsten vor dem Computer, aber auch auf Reisen
-                    mit
-                    meiner Familie. Eine gemütliche Tasse Kaffee in netter Gesellschaft schlage ich nie aus. Ich bin ein
-                    Fan
-                    von
-                    Iron Man und generell des Marvel-Universums 😉.
-                </div>
-            </div>
-
-            <div>
-                <h2 style="margin-top: 10rem;">Meine Reise in die IT-Welt</h2>
-            </div>
-
-            <div class="img ">
-                <img class="img-fluid rounded mx-md-auto rounded-circle" style="max-width:35%; opacity: 0.5;"
-                    src="./pictures/it-journey.jpg" alt="it-journey">
-            </div>
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Erstes Jahr: Die Welt der Programmierung erobern
-                </h6>
-
-                <p class="text-justify">
-                    Meine Reise in die IT-Welt begann im September 2021 bei der Firma Schnellecke. In den ersten drei
-                    Monaten im Service Desk sammelte ich wertvolle Erfahrungen. Im Fokus des ersten Jahres standen die
-                    Grundlagen der Programmierung und die Entwicklung einfacher WPF-Anwendungen mit C#. Ein Highlight
-                    war
-                    die Personalverwaltungsanwendung mit Funktionen wie Hinzufügen, Löschen, Anzeigen, Aktualisieren und
-                    Speichern in einer CSV-Datei.
-                </p>
-            </div>
-
-
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Zweites Jahr: Expansion in die Welt des Webs
-                </h6>
-
-                <p class="text-justify">
-                    Im zweiten Ausbildungsjahr vertiefte ich meine Kenntnisse in der Entwicklung von WPF-Anwendungen mit
-                    C# und entwickelte eine Anwendung, die Barcodes dynamisch aus vom Benutzer eingegebenem Text
-                    erzeugt. Danach tauchte ich in die Welt der Webentwicklung ein, erlernte HTML, CSS und JavaScript,
-                    und nutzte dieses Wissen für mein persönliches Projekt – die Erstellung meiner eigenen Website.
-                </p>
-            </div>
-
-
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Drittes Jahr: Spannende Erkundung von Java und Spring Boot
-                </h6>
-
-                <p class="text-justify">
-                    Im dritten Jahr spezialisierte ich mich weiter auf Java und Objektorientierte Programmierung (OOP).
-                    Ich entwickelte eine Desktop-Anwendung in Java und tauchte intensiv in die Webentwicklung ein. Dabei
-                    kamen Technologien wie JPA, Thymeleaf, Bootstrap, Spring Security, Lombok und anderen zum Einsatz.
-                    Das
-                    Ergebnis waren zwei innovative Webanwendungen, die meine Leidenschaft für die Technologie
-                    widerspiegeln.
-                </p>
-            </div>
-
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Fortschritte in der Ausbildung und Ergänzungen in der Schule
-                </h6>
-
-                <p class="text-justify">
-                    Neben der Ausbildung im Betrieb wird mein Weg in die Programmierung durch die Ausbildung in der
-                    Berufsschule bereichert. Von der Programmierung in Fachsprachen bis hin zur Analyse von Algorithmen
-                    – die Berufsschule hat mir zusätzliche Kenntnisse vermittelt und meine wissenschaftliche
-                    Herangehensweise an die Programmierung gestärkt.
-                </p>
-            </div>
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Entdecke mehr!
-                </h6>
-
-                <p class="text-justify">
-                    Schau dich gerne um und entdecke mehr über meine Leidenschaft für die Webentwicklung und meine Reise
-                    in die Welt der Anwendungsentwicklung!
-                </p>
-            </div>
-        </section>
-
-        <article style="margin-top: 15rem;">
-        </article>
-
-
-        <section id="myWork" class="section-my-work">
-            <h3 class="my-5">Meine Arbeit</h3>
-
-            <div class="img ">
-                <img class="img-fluid rounded mx-md-auto rounded-circle" style="max-width:35%; opacity: 0.5;"
-                    src="./pictures/image.png" alt="it-journey">
-            </div>
-
-            <p class="text-justify" style="margin-top: 2rem;   font-size: calc(0.8ch + 0.4vw)">
-                Im Rahmen meiner Ausbildung habe ich zwei Projekte für das Unternehmen durchgeführt, die ich
-                hier vorstelle, um meine Erfahrungen und Fähigkeiten weiterzugeben. Diese Projekte stellen das geistige
-                Eigentum von Schnellecke Logistics dar.
-            </p>
-
-            <div class="row">
-
-
-                <div class="col-md-6 px-4">
-                    <h6 style="  margin-top: 8rem; margin-bottom: 2rem;">
-                        Add Barcode to PDF
-                    </h6>
-
-                    <p class="text-justify">
-                        Ein Programm (WPF, C#), das es ermöglicht, Barcodes in PDF-Dokumente einzufügen, ohne dass die
-                        Dokumente
-                        manuell geändert werden können, wenn der Benutzer die Barcodes eingibt und speichert.
-                    </p>
-
-                    <img class="img-fluid rounded mx-md-auto" style="max-width:100%; opacity: 0.9; margin-top: 1rem;"
-                        src="./pictures/barcode.png" alt="program image">
-                </div>
-
-
-                <div class="col-md-6 px-4">
-                    <h6 style="  margin-top: 8rem; margin-bottom: 2rem;">
-                        Excel Bestandsvergleich
-                    </h6>
-
-                    <p class="text-justify">
-                        Ein Programm (Desk-App, Java), das es ermöglicht, zwei Excel-Dateien einfügt und vergleicht. Als
-                        nächste ein
-                        dritte Excel erstellt, indem nur die unterschiedlichen Daten von die zwei Excel zeigt und kann
-                        auch diese speichern.
-                    </p>
-
-                    <img class="img-fluid rounded mx-md-auto" style="max-width:105%; opacity: 0.9; margin-top: 1rem;"
-                        src="./pictures/excel.png" alt="program image">
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-    <!-- Αυτό γεμίζει το κενό ανάμεσα σε όλα τα παραπάνω, με αποτέλεσμα το footer της σελίδας 
-        να είναι πάντα sτο κάτω μέρος της σελίδας -->
-    <article style="margin-top: 10rem;">
-    </article>
-
-
-    <!-- the footer of all the pages -->
-    <footer>
-        <div class="footer">
-            <h6>Designed & Built by <a href="index.html">Triantafyllos Mylonas</a> <a
-                    href="./html/impressum.html">[Impressum/Datenschutz]</a></h6>
-            <ul>
-                <li>
-                    <a href="https://github.com/TriaMylonas" target="_blank">
-                        <img src="./pictures/github.png" alt="github logo" width="30px">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/triantafyllos-mylonas/" target="_blank"><img
-                            src="./pictures/linkedin.png" alt="linkedin logo" width="30px"></a>
-                </li>
-                <li>
-                    <a href="https://www.xing.com/profile/Triantafyllos_Mylonas" target="_blank"><img
-                            src="./pictures/icons8-xing-96.png" alt="linkedin logo" width="40px"></a>
-                </li>
-            </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                <span class="lang-opt lang-en active">EN</span>
+                <span class="lang-sep">|</span>
+                <span class="lang-opt lang-de">DE</span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about" class="mobile-link"><span class="nav-num">01.</span> <span data-i18n="nav-about">About</span></a></li>
+            <li><a href="#skills" class="mobile-link"><span class="nav-num">02.</span> <span data-i18n="nav-skills">Skills</span></a></li>
+            <li><a href="#projects" class="mobile-link"><span class="nav-num">03.</span> <span data-i18n="nav-projects">Projects</span></a></li>
+            <li><a href="#contact" class="mobile-link"><span class="nav-num">04.</span> <span data-i18n="nav-contact">Contact</span></a></li>
+        </ul>
+    </div>
+    <main>
+        <!-- ==================== HERO ==================== -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <p class="hero-greeting" data-i18n="hero-greeting">Hi, my name is</p>
+                <h1 class="hero-name">Triantafyllos Mylonas.</h1>
+                <h2 class="hero-tagline" data-i18n="hero-tagline">I build things for the web &amp; desktop.</h2>
+                <p class="hero-desc" data-i18n="hero-desc">
+                    Application Developer specializing in Java, C#, and web technologies.
+                    Currently completing my training as <span class="accent">Fachinformatiker für Anwendungsentwicklung</span> at Schnellecke.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero-cta">Check out my work!</a>
+                    <a href="https://github.com/TriaMylonas" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== ABOUT ==================== -->
+        <section id="about" class="section">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">
+                    <span class="section-num">01.</span>
+                    <span data-i18n="about-title">About Me</span>
+                    <span class="section-line"></span>
+                </h2>
+            </div>
+            <div class="about-grid animate-on-scroll">
+                <div class="about-text">
+                    <p data-i18n="about-p1">
+                        The computer is more than just a work tool for me — it's a means of communication and creativity.
+                        Programming is not just a profession but also my hobby. The variety of possibilities presents
+                        a pleasant challenge that I embrace every day.
+                    </p>
+                    <p data-i18n="about-p2">
+                        My name is Triantafyllos Mylonas, born on February 25, 1985. Happily married and proud father
+                        of a wonderful child. My free time is best spent in front of the computer, but also traveling
+                        with my family. A cozy cup of coffee in good company I never turn down.
+                        I'm a fan of Iron Man and the Marvel universe in general 😉
+                    </p>
+                    <ul class="about-facts">
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="about-location">Germany</span></li>
+                        <li><i class="fas fa-briefcase"></i> Schnellecke Logistics</li>
+                        <li><i class="fas fa-graduation-cap"></i> Fachinformatiker für Anwendungsentwicklung</li>
+                        <li><i class="fas fa-heart"></i> Iron Man &amp; Marvel Universe</li>
+                    </ul>
+                </div>
+                <div class="about-image-wrapper">
+                    <div class="about-image-container">
+                        <img src="./pictures/TriaMyl_Foto.2.1.jpg" alt="Triantafyllos Mylonas" class="about-photo">
+                    </div>
+                </div>
+            </div>
+            <!-- Timeline -->
+            <div class="timeline-header animate-on-scroll">
+                <h3 class="timeline-main-title" data-i18n="journey-title">My IT Journey</h3>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sep 2021</span>
+                        <h4 data-i18n="journey-y1-title">Year 1: Conquering Programming</h4>
+                        <p data-i18n="journey-y1-text">
+                            My journey into IT began at Schnellecke. After three months in the Service Desk,
+                            I focused on programming fundamentals and built WPF applications with C#.
+                            A highlight was a personnel management app with full CRUD functionality and CSV storage.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022</span>
+                        <h4 data-i18n="journey-y2-title">Year 2: Expanding into the Web</h4>
+                        <p data-i18n="journey-y2-text">
+                            I deepened my WPF/C# skills and built an app that dynamically generates barcodes from
+                            user input and embeds them in PDFs. Then I dived into web development — learning
+                            HTML, CSS and JavaScript, which led to building my own personal website.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h4 data-i18n="journey-y3-title">Year 3: Java &amp; Spring Boot</h4>
+                        <p data-i18n="journey-y3-text">
+                            Specialized in Java and OOP, developing a desktop app for Excel file comparison.
+                            Then explored web applications with Spring Boot and Maven — covering frontend and backend
+                            with MVC, JPA, Thymeleaf, Spring Security, and Lombok.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h4 data-i18n="journey-now-title">Present: Final Project</h4>
+                        <p data-i18n="journey-now-text">
+                            Now in the preparation phase for my final project — combining knowledge, creativity
+                            and practical application. Ready to demonstrate my skills and contribute to modern innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== SKILLS ==================== -->
+        <section id="skills" class="section">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">
+                    <span class="section-num">02.</span>
+                    <span data-i18n="skills-title">Skills &amp; Technologies</span>
+                    <span class="section-line"></span>
+                </h2>
+            </div>
+            <div class="skills-categories">
+                <div class="skills-category animate-on-scroll">
+                    <h3 data-i18n="skills-cat-lang">Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-java-plain colored"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-csharp-plain colored"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category animate-on-scroll">
+                    <h3 data-i18n="skills-cat-fw">Frameworks &amp; Libraries</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-spring-plain colored"></i>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-dotnetcore-plain colored"></i>
+                            <span>WPF / .NET</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-thymeleaf-original colored"></i>
+                            <span>Thymeleaf</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-hibernate-plain colored"></i>
+                            <span>JPA / Hibernate</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-maven-plain colored"></i>
+                            <span>Maven</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category animate-on-scroll">
+                    <h3 data-i18n="skills-cat-tools">Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-github-original colored"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-intellij-plain colored"></i>
+                            <span>IntelliJ</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-visualstudio-plain colored"></i>
+                            <span>Visual Studio</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-vscode-plain colored"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-linux-plain"></i>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== PROJECTS ==================== -->
+        <section id="projects" class="section">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">
+                    <span class="section-num">03.</span>
+                    <span data-i18n="projects-title">My Work</span>
+                    <span class="section-line"></span>
+                </h2>
+            </div>
+            <p class="projects-note animate-on-scroll" data-i18n="projects-note">
+                During my training I completed the following projects for Schnellecke Logistics.
+                These represent the intellectual property of the company.
+            </p>
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-img">
+                        <img src="./pictures/barcode.png" alt="Add Barcode to PDF screenshot">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TriaMylonas" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-featured" data-i18n="proj-featured">Featured Project</p>
+                        <h3 class="project-title">Add Barcode to PDF</h3>
+                        <div class="project-desc">
+                            <p data-i18n="proj1-desc">
+                                A WPF application (C#) that allows users to insert barcodes into PDF documents.
+                                Documents cannot be manually modified once barcodes are entered and saved,
+                                ensuring data integrity.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>C#</li>
+                            <li>WPF</li>
+                            <li>.NET</li>
+                            <li>PDF Processing</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card project-card-reverse animate-on-scroll">
+                    <div class="project-img">
+                        <img src="./pictures/excel.png" alt="Excel Bestandsvergleich screenshot">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TriaMylonas" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="project-featured" data-i18n="proj-featured">Featured Project</p>
+                        <h3 class="project-title">Excel Bestandsvergleich</h3>
+                        <div class="project-desc">
+                            <p data-i18n="proj2-desc">
+                                A Java desktop application that imports two Excel files and compares them.
+                                It generates a third Excel file containing only the differences between the two,
+                                which can then be saved by the user.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Java</li>
+                            <li>Desktop App</li>
+                            <li>Apache POI</li>
+                            <li>Excel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== CONTACT ==================== -->
+        <section id="contact" class="section contact animate-on-scroll">
+            <p class="contact-overline" data-i18n="contact-overline">04. What's Next?</p>
+            <h2 class="contact-title" data-i18n="contact-title">Get In Touch</h2>
+            <p class="contact-desc" data-i18n="contact-desc">
+                I'm currently looking for new opportunities. Whether you have a question, a project idea,
+                or just want to say hello — my inbox is always open!
+            </p>
+            <a href="https://www.linkedin.com/in/triantafyllos-mylonas/" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary contact-btn" data-i18n="contact-btn">Say Hello</a>
+            <div class="social-links">
+                <a href="https://github.com/TriaMylonas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/triantafyllos-mylonas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.xing.com/profile/Triantafyllos_Mylonas" target="_blank" rel="noopener noreferrer" aria-label="Xing">
+                    <i class="fab fa-xing"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <p>
+            <span data-i18n="footer-text">Designed &amp; Built by</span>
+            <a href="#hero">Triantafyllos Mylonas</a>
+        </p>
+        <p>
+            <a href="./html/impressum.html" data-i18n="footer-impressum">Impressum / Datenschutz</a>
+        </p>
     </footer>
-
-
-
+    <script src="./JavaScipt/portfolio.js"></script>
 </body>
-
 </html>
