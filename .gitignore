@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Office temp files (π.χ. ~$text2.docx)
+~$*

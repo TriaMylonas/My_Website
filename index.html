@@ -1,302 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fachinformatiker für Anwendungsentwicklung">
-    <meta name="keywords" content="Triantafyllos, Mylonas, Fachinformatiker, Anwendungsentwicklung, Schnellecke">
-    <meta property="og:description" content="Triantafyllos Mylonas Website.">
-    <meta property="og:titel" content="Triantafyllos Mylonas">
+    <meta name="description" content="Triantafyllos Mylonas – Junior Data Integration Expert. Fachinformatiker für Anwendungsentwicklung, heute in der Daten- und Systemintegration zuhause.">
+    <meta name="keywords" content="Triantafyllos, Mylonas, Data Integration, EDI, SAP, Lobster, Fachinformatiker, Anwendungsentwicklung, Schnellecke">
+    <meta name="theme-color" content="#0a0f1a">
+    <meta property="og:description" content="Junior Data Integration Expert – auf dem Weg Richtung Data Engineering, DevOps und Netzwerktechnik.">
+    <meta property="og:title" content="Triantafyllos Mylonas">
     <meta property="og:locale" content="de_DE">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.triamylo.dev//">
+    <meta property="og:url" content="https://www.triamylo.dev/">
     <meta property="og:site_name" content="Triantafyllos Mylonas">
     <meta property="og:image" content="./pictures/Logo1.png" alt="Triantafyllos Mylonas Logo">
 
+    <link rel="icon" href="./pictures/Logo1.png">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="../styles/styles.css">
-    <link type="text/css" rel="stylesheet" href="../styles/header.css">
-    <link type="text/css" rel="stylesheet" href="../styles/index.css">
-    <link type="text/css" rel="stylesheet" href="../styles/about.css">
-    <link type="text/css" rel="stylesheet" href="../styles/footer.css">
-
+    <link type="text/css" rel="stylesheet" href="./styles/styles.css">
+    <link type="text/css" rel="stylesheet" href="./styles/header.css">
+    <link type="text/css" rel="stylesheet" href="./styles/footer.css">
 
     <title>Triantafyllos Mylonas</title>
 </head>
 
-
 <body>
 
-    <!-- the header of all the pages  -->
-    <header>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <header class="site-header">
         <nav class="navigation-bar">
-            <a href="index.html">
+            <a href="index.html" aria-label="Home">
                 <img id="logo" src="./pictures/Logo1.png" alt="Triantafyllos Mylonas Logo">
             </a>
 
-            <ul>
-                <li>
-                    <a href="#aboutMe"><span>01.</span> über mich selbst</a>
-                </li>
-
-                <li>
-                    <a href="#myWork"><span>02.</span> meine Arbeit</a>
-                </li>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about"><span>01.</span> über mich</a></li>
+                <li><a href="#now" data-i18n="nav.now"><span>02.</span> heute</a></li>
+                <li><a href="#heading" data-i18n="nav.heading"><span>03.</span> wohin</a></li>
+                <li><a href="#homelab" data-i18n="nav.homelab"><span>04.</span> homelab</a></li>
+                <li><a href="#skills" data-i18n="nav.skills"><span>05.</span> skills</a></li>
+                <li><a href="#projects" data-i18n="nav.projects"><span>06.</span> projekte</a></li>
             </ul>
+
+            <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
         </nav>
     </header>
 
-    <div class="main-div container">
+    <main id="main">
 
+        <section class="hero">
+            <p class="hero-eyebrow" data-i18n="hero.eyebrow">Hi, ich bin</p>
+            <h1>Triantafyllos Mylonas</h1>
+            <img class="hero-photo" src="./pictures/TriaMyl_Foto.2.1.jpg" alt="Triantafyllos Mylonas">
+            <p class="hero-tagline" data-i18n="hero.tagline">Fachinformatiker für Anwendungsentwicklung – heute in der Daten- und Systemintegration zuhause.</p>
+            <p class="hero-lede" data-i18n="hero.lede">
+                Mich interessiert nicht nur, <em>dass</em> etwas funktioniert – sondern <em>warum</em>. Deshalb
+                schaue ich gerne hinter die Kulissen von Systemen, Schnittstellen und Netzwerken.
+            </p>
+            <p class="scroll-hint" data-i18n="hero.scrollHint">↓ scroll runter</p>
+        </section>
 
-        <section class="section-with-greeting text-center">
-            <div class="m-5">
-                Hi, meine Name ist
-            </div>
+        <section id="about">
+            <h2><span class="num">01.</span> <span data-i18n="about.title">Über mich</span></h2>
 
-            <div class="h1 row">
-                <div class="col-md-11 mx-auto">
-                    Triantafyllos Mylonas
+            <div class="about-grid">
+                <div class="about-card">
+                    <p data-i18n="about.personal">
+                        Ich bin glücklich verheiratet und stolzer Vater eines wunderbaren Kindes. Meine Freizeit
+                        verbringe ich am liebsten vor dem Computer, aber auch auf Reisen mit meiner Familie. Eine
+                        gemütliche Tasse Kaffee in netter Gesellschaft schlage ich nie aus – und ja, ich bin nach
+                        wie vor großer Fan von Iron Man und dem Marvel-Universum 😉.
+                    </p>
                 </div>
-                <div class="col-md-1">
-                    👋
+                <div class="about-card">
+                    <p data-i18n="about.professional">
+                        Der Computer ist für mich längst mehr als ein Arbeitsinstrument – er ist ein Werkzeug, mit
+                        dem ich verstehen will, wie Dinge im Hintergrund wirklich funktionieren. Meine Ausbildung
+                        zum Fachinformatiker für Anwendungsentwicklung habe ich 2024 abgeschlossen. Seitdem
+                        arbeite ich im Bereich Datenintegration und wachse Schritt für Schritt in Richtung Data
+                        Engineering, DevOps und Netzwerktechnik.
+                    </p>
                 </div>
-            </div>
-
-
-            <div class="row my-5 justify-content-center align-items-center">
-                <div class="col-md-6 d-flex align-items-center">
-                    <h2 class="mb-3 text-md-right text-center">Willkommen auf meiner Portfolio-Website!</h2>
-                </div>
-                <div class="col-md-6 d-flex align-items-center text-center">
-                    <img class="img-fluid rounded mx-md-auto" style="max-width:45%"
-                        src="../pictures/TriaMyl_Foto.2.1.jpg" alt="Triantafyllos Mylonas Foto">
-                </div>
-                <p class="my-5 first-p">
-                    seit dem 1. September 2021 tauche ich in die
-                    faszinierende Welt der Fachinformatiker als Anwendungsentwicklung ein!
-                </p>
-
             </div>
         </section>
 
-        <article style="margin-top: 15rem;">
-        </article>
+        <section id="now">
+            <h2><span class="num">02.</span> <span data-i18n="now.title">Was ich heute mache</span></h2>
 
+            <p class="now-role" data-i18n="now.role">Junior Data Integration Expert</p>
+            <p class="now-company" data-i18n="now.company">Schnellecke Logistics, Wolfsburg</p>
 
-        <section id="aboutMe" class="section-about-me text-center">
-
-            <h3 class="my-5">Über mich</h3>
-
-            <div class="row text-justify">
-                <div class="col-md-6 p-4 ">
-                    Der Computer ist nicht nur ein Arbeitsinstrument für mich, sondern ein etabliertes Mittel der
-                    Kommunikation.
-                    Programmierung ist nicht nur ein Beruf, sondern auch mein Hobby. Ich liebe die Vielfalt der
-                    Anwendungsmöglichkeiten und sehe dies als angenehme Herausforderung. Meine Entscheidung, mich in
-                    diese
-                    Richtung zu entwickeln, entspringt dem Wunsch, einen persönlichen Traum zu verwirklichen.
-                </div>
-
-                <div class="col-md-6 p-4">
-
-                    Triantafyllos Mylonas, geboren am 25. Februar 1985. Glücklich verheiratet und stolzer Vater eines
-                    wunderbaren Kindes. Meine Freizeit verbringe ich am liebsten vor dem Computer, aber auch auf Reisen
-                    mit
-                    meiner Familie. Eine gemütliche Tasse Kaffee in netter Gesellschaft schlage ich nie aus. Ich bin ein
-                    Fan
-                    von
-                    Iron Man und generell des Marvel-Universums 😉.
-                </div>
-            </div>
-
-            <div>
-                <h2 style="margin-top: 10rem;">Meine Reise in die IT-Welt</h2>
-            </div>
-
-            <div class="img ">
-                <img class="img-fluid rounded mx-md-auto rounded-circle" style="max-width:35%; opacity: 0.5;"
-                    src="./pictures/it-journey.jpg" alt="it-journey">
-            </div>
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Erstes Jahr: Die Welt der Programmierung erobern
-                </h6>
-
-                <p class="text-justify">
-                    Meine Reise in die IT-Welt begann im September 2021 bei der Firma Schnellecke. In den ersten drei
-                    Monaten im Service Desk sammelte ich wertvolle Erfahrungen. Im Fokus des ersten Jahres standen die
-                    Grundlagen der Programmierung und die Entwicklung einfacher WPF-Anwendungen mit C#. Ein Highlight
-                    war
-                    die Personalverwaltungsanwendung mit Funktionen wie Hinzufügen, Löschen, Anzeigen, Aktualisieren und
-                    Speichern in einer CSV-Datei.
-                </p>
-            </div>
-
-
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Zweites Jahr: Expansion in die Welt des Webs
-                </h6>
-
-                <p class="text-justify">
-                    Im zweiten Ausbildungsjahr vertiefte ich meine Kenntnisse in der Entwicklung von WPF-Anwendungen mit
-                    C# und entwickelte eine Anwendung, die Barcodes dynamisch aus vom Benutzer eingegebenem Text
-                    erzeugt. Danach tauchte ich in die Welt der Webentwicklung ein, erlernte HTML, CSS und JavaScript,
-                    und nutzte dieses Wissen für mein persönliches Projekt – die Erstellung meiner eigenen Website.
-                </p>
-            </div>
-
-
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Drittes Jahr: Spannende Erkundung von Java und Spring Boot
-                </h6>
-
-                <p class="text-justify">
-                    Im dritten Jahr spezialisierte ich mich weiter auf Java und Objektorientierte Programmierung (OOP).
-                    Ich entwickelte eine Desktop-Anwendung in Java und tauchte intensiv in die Webentwicklung ein. Dabei
-                    kamen Technologien wie JPA, Thymeleaf, Bootstrap, Spring Security, Lombok und anderen zum Einsatz.
-                    Das
-                    Ergebnis waren zwei innovative Webanwendungen, die meine Leidenschaft für die Technologie
-                    widerspiegeln.
-                </p>
-            </div>
-
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Fortschritte in der Ausbildung und Ergänzungen in der Schule
-                </h6>
-
-                <p class="text-justify">
-                    Neben der Ausbildung im Betrieb wird mein Weg in die Programmierung durch die Ausbildung in der
-                    Berufsschule bereichert. Von der Programmierung in Fachsprachen bis hin zur Analyse von Algorithmen
-                    – die Berufsschule hat mir zusätzliche Kenntnisse vermittelt und meine wissenschaftliche
-                    Herangehensweise an die Programmierung gestärkt.
-                </p>
-            </div>
-
-            <div>
-                <h6 style="  margin-top: 4rem; text-align: left !important;">
-                    Entdecke mehr!
-                </h6>
-
-                <p class="text-justify">
-                    Schau dich gerne um und entdecke mehr über meine Leidenschaft für die Webentwicklung und meine Reise
-                    in die Welt der Anwendungsentwicklung!
-                </p>
-            </div>
-        </section>
-
-        <article style="margin-top: 15rem;">
-        </article>
-
-
-        <section id="myWork" class="section-my-work">
-            <h3 class="my-5">Meine Arbeit</h3>
-
-            <div class="img ">
-                <img class="img-fluid rounded mx-md-auto rounded-circle" style="max-width:35%; opacity: 0.5;"
-                    src="./pictures/image.png" alt="it-journey">
-            </div>
-
-            <p class="text-justify" style="margin-top: 2rem;   font-size: calc(0.8ch + 0.4vw)">
-                Im Rahmen meiner Ausbildung habe ich zwei Projekte für das Unternehmen durchgeführt, die ich
-                hier vorstelle, um meine Erfahrungen und Fähigkeiten weiterzugeben. Diese Projekte stellen das geistige
-                Eigentum von Schnellecke Logistics dar.
+            <p data-i18n="now.intro">
+                Ich verbinde über 10 interne und externe Systeme miteinander – darunter SAP S/4HANA, ein
+                Warehouse-Management-System, EDI-Partner wie Automobilhersteller, SharePoint und weitere interne
+                Plattformen. Dafür nutze ich vor allem die Integrationsplattform Lobster.
             </p>
 
-            <div class="row">
-
-
-                <div class="col-md-6 px-4">
-                    <h6 style="  margin-top: 8rem; margin-bottom: 2rem;">
-                        Add Barcode to PDF
-                    </h6>
-
-                    <p class="text-justify">
-                        Ein Programm (WPF, C#), das es ermöglicht, Barcodes in PDF-Dokumente einzufügen, ohne dass die
-                        Dokumente
-                        manuell geändert werden können, wenn der Benutzer die Barcodes eingibt und speichert.
-                    </p>
-
-                    <img class="img-fluid rounded mx-md-auto" style="max-width:100%; opacity: 0.9; margin-top: 1rem;"
-                        src="./pictures/barcode.png" alt="program image">
-                </div>
-
-
-                <div class="col-md-6 px-4">
-                    <h6 style="  margin-top: 8rem; margin-bottom: 2rem;">
-                        Excel Bestandsvergleich
-                    </h6>
-
-                    <p class="text-justify">
-                        Ein Programm (Desk-App, Java), das es ermöglicht, zwei Excel-Dateien einfügt und vergleicht. Als
-                        nächste ein
-                        dritte Excel erstellt, indem nur die unterschiedlichen Daten von die zwei Excel zeigt und kann
-                        auch diese speichern.
-                    </p>
-
-                    <img class="img-fluid rounded mx-md-auto" style="max-width:105%; opacity: 0.9; margin-top: 1rem;"
-                        src="./pictures/excel.png" alt="program image">
-                </div>
-
-
-            </div>
-
-
+            <ul class="now-list">
+                <li data-i18n="now.li1">EDI-Routing und Partneranbindungen</li>
+                <li data-i18n="now.li2">REST- und GraphQL-API-Integrationen</li>
+                <li data-i18n="now.li3">Automatisierung mit PowerShell- und Python-Skripten</li>
+                <li data-i18n="now.li4">Dafür sorgen, dass Daten sauber und zuverlässig zwischen Systemen fließen</li>
+                <li data-i18n="now.li5">Helfen zu Ausbildenen Betreuung</li>
+            </ul>
         </section>
 
+        <section id="heading">
+            <h2><span class="num">03.</span> <span data-i18n="heading.title">Wohin ich mich entwickle</span></h2>
+            <p data-i18n="heading.text">
+                Ich bin kein Senior und auch kein Experte – sondern jemand mit einem soliden Fundament und
+                echter Neugier. Mich interessiert, immer wieder Neues zu lernen und zu verstehen, wie es
+                funktioniert – deshalb experimentiere ich auch gerne mit meinem Homelab. Die Zeit, die mir
+                neben Familie und Job bleibt, nutze ich, um Neues auszuprobieren und dazuzulernen. Nach der
+                Ausbildung hat mich mein Weg in die Datenintegration geführt – anfangs war ich skeptisch,
+                mittlerweile finde ich es richtig spannend und habe viel dabei gelernt. Ich bin gespannt, was
+                die Zukunft noch bringt.
+            </p>
+        </section>
 
+        <section id="homelab">
+            <h2><span class="num">04.</span> <span data-i18n="homelab.title">Homelab & Selbstlernen</span></h2>
+            <p data-i18n="homelab.text">
+                Privat betreibe ich mein eigenes Homelab – einfach, weil es mir Spaß macht. Ein Mini-PC und ein
+                NAS bilden die Basis, Docker und Portainer verwalten meine selbst gehosteten Services. Dazu
+                kommen AdGuard Home, Cloudflare Tunnel und Tailscale, um Netzwerk und Zugriffe sauber zu
+                organisieren. Was ich lerne, halte ich in Obsidian als Zettelkasten fest.
+            </p>
+            <div class="tag-row">
+                <span class="tag">Mini-PC + NAS</span>
+                <span class="tag">Docker / Portainer</span>
+                <span class="tag">AdGuard Home</span>
+                <span class="tag">Cloudflare Tunnel</span>
+                <span class="tag">Tailscale</span>
+                <span class="tag">Obsidian</span>
+            </div>
+            <p class="pull-quote" data-i18n="homelab.quote">
+                Ich lerne am besten, indem ich zuhause etwas baue – und auch mal kaputt mache.
+            </p>
+        </section>
 
+        <section id="skills">
+            <h2><span class="num">05.</span> <span data-i18n="skills.title">Skills</span></h2>
 
+            <div class="skills-grid skills-grid-3">
+                <div class="skill-card">
+                    <h3 data-i18n="skills.g1.title">Aus der Ausbildung</h3>
+                    <p class="skill-kicker" data-i18n="skills.g1.kicker">Ausbildung</p>
+                    <div class="skill-tags">
+                        <span class="pill foundation" data-i18n="skills.g1.p1">C#</span>
+                        <span class="pill foundation" data-i18n="skills.g1.p2">WPF</span>
+                        <span class="pill foundation" data-i18n="skills.g1.p3">Java</span>
+                        <span class="pill foundation" data-i18n="skills.g1.p4">Spring Boot</span>
+                        <span class="pill foundation" data-i18n="skills.g1.p5">HTML/CSS/JS</span>
+                        <span class="pill foundation" data-i18n="skills.g1.p6">Python</span>
+                        <span class="pill foundation" data-i18n="skills.g1.p7">SQL</span>
+                        <span class="pill foundation" data-i18n="skills.g1.p8">Netzwerk</span>
+                    </div>
+                </div>
 
-    </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skills.g2.title">Integration & Daten</h3>
+                    <p class="skill-kicker" data-i18n="skills.g2.kicker">täglich im Einsatz</p>
+                    <div class="skill-tags">
+                        <span class="pill daily" data-i18n="skills.g2.p1">Lobster</span>
+                        <span class="pill daily" data-i18n="skills.g2.p2">EDI</span>
+                        <span class="pill daily" data-i18n="skills.g2.p3">REST/GraphQL APIs</span>
+                        <span class="pill daily" data-i18n="skills.g2.p4">SAP (OData)</span>
+                        <span class="pill daily" data-i18n="skills.g2.p5">PowerShell</span>
+                        <span class="pill daily" data-i18n="skills.g2.p6">Microsoft 365</span>
+                    </div>
+                </div>
 
+                <div class="skill-card">
+                    <h3 data-i18n="skills.g3.title">Homelab & Self-Hosting</h3>
+                    <p class="skill-kicker" data-i18n="skills.g3.kicker">privates Lernen</p>
+                    <div class="skill-tags">
+                        <span class="pill foundation" data-i18n="skills.g3.p1">Docker</span>
+                        <span class="pill foundation" data-i18n="skills.g3.p2">Linux</span>
+                        <span class="pill foundation" data-i18n="skills.g3.p3">NAS</span>
+                        <span class="pill foundation" data-i18n="skills.g3.p4">AdGuard Home</span>
+                        <span class="pill foundation" data-i18n="skills.g3.p5">Paperless-ngx</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="projects">
+            <h2><span class="num">06.</span> <span data-i18n="projects.title">Projekte</span></h2>
 
+            <p data-i18n="projects.intro">
+                Im zweiten und dritten Jahr meiner Ausbildung habe ich mich intensiv mit Java und
+                objektorientierter Programmierung beschäftigt – von den Grundprinzipien wie Klassen, Vererbung
+                und Interfaces bis hin zum Spring-Ökosystem (Spring Boot, JPA, Thymeleaf, Spring Security,
+                Lombok, Maven). Die drei Projekte hier sind das Ergebnis dieser Reise, vom Excel-Vergleichstool
+                bis zur vollständigen Webanwendung mit Login und Datenbank als Abschlussprojekt. Sie sind
+                geistiges Eigentum von Schnellecke Logistics.
+            </p>
 
+            <p class="projects-subheading" data-i18n="projects.subheading">Frühere Projekte aus der Ausbildung</p>
 
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="./pictures/carUsage.png" alt="Kilometerstände-Erfassung – Screenshot">
+                    <div class="project-body">
+                        <p class="skill-kicker" data-i18n="projects.kmapp.tag">Abschlussprojekt · März–April 2024</p>
+                        <h3 data-i18n="projects.kmapp.title">Kilometerstände-Erfassung für die Leasingflotte</h3>
+                        <p data-i18n="projects.kmapp.text">
+                            Mein Abschlussprojekt der Ausbildung: eine Webanwendung (Spring Boot/Java, Bootstrap,
+                            MariaDB), die den bisherigen manuellen Prozess ersetzt, bei dem Mitarbeiter ihre
+                            Kilometerstände per E-Mail meldeten. Mitarbeiter loggen sich ein und melden monatlich
+                            ihren Kilometerstand (keine rückwirkende Änderung möglich), der Fahrzeugverwalter
+                            behält den Überblick über die gesamte Leasingflotte, und bei fehlender Meldung
+                            verschickt das System automatisch eine Erinnerung.
+                        </p>
+                    </div>
+                </div>
 
-    <!-- Αυτό γεμίζει το κενό ανάμεσα σε όλα τα παραπάνω, με αποτέλεσμα το footer της σελίδας 
-        να είναι πάντα sτο κάτω μέρος της σελίδας -->
-    <article style="margin-top: 10rem;">
-    </article>
+                <div class="project-card">
+                    <img src="./pictures/barcode.png" alt="Add Barcode to PDF – Screenshot">
+                    <div class="project-body">
+                        <h3 data-i18n="projects.card1.title">Add Barcode to PDF</h3>
+                        <p data-i18n="projects.card1.text">
+                            Ein Programm (WPF, C#), das es ermöglicht, Barcodes in PDF-Dokumente einzufügen, ohne
+                            dass die Dokumente manuell geändert werden können, wenn der Benutzer die Barcodes
+                            eingibt und speichert.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="project-card">
+                    <img src="./pictures/excel.png" alt="Excel Bestandsvergleich – Screenshot">
+                    <div class="project-body">
+                        <h3 data-i18n="projects.card2.title">Excel Bestandsvergleich</h3>
+                        <p data-i18n="projects.card2.text">
+                            Ein Programm (Desktop-App, Java), das zwei Excel-Dateien vergleicht und eine dritte
+                            Excel-Datei erstellt, die nur die unterschiedlichen Daten der beiden Dateien zeigt
+                            und speichert.
+                        </p>
+                    </div>
+                </div>
 
-    <!-- the footer of all the pages -->
+                <div class="project-card placeholder">
+                    <div class="project-body">
+                        <h3 data-i18n="projects.card3.title">Homelab- / Data-Projekt</h3>
+                        <p data-i18n="projects.card3.text">
+                            Hier entsteht bald ein Projekt aus meinem Homelab bzw. dem Datenbereich. [Platzhalter]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer>
         <div class="footer">
-            <h6>Designed & Built by <a href="index.html">Triantafyllos Mylonas</a> <a
-                    href="./html/impressum.html">[Impressum/Datenschutz]</a></h6>
+            <h6 data-i18n="footer.built">Designed &amp; Built by <a href="index.html">Triantafyllos Mylonas</a> <a href="./html/impressum.html">[Impressum/Datenschutz]</a></h6>
             <ul>
                 <li>
-                    <a href="https://github.com/TriaMylonas" target="_blank">
-                        <img src="./pictures/github.png" alt="github logo" width="30px">
+                    <a href="https://github.com/TriaMylonas" target="_blank" rel="noopener">
+                        <img src="./pictures/github.png" alt="GitHub">
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/triantafyllos-mylonas/" target="_blank"><img
-                            src="./pictures/linkedin.png" alt="linkedin logo" width="30px"></a>
+                    <a href="https://www.linkedin.com/in/triantafyllos-mylonas/" target="_blank" rel="noopener">
+                        <img src="./pictures/linkedin.png" alt="LinkedIn">
+                    </a>
                 </li>
                 <li>
-                    <a href="https://www.xing.com/profile/Triantafyllos_Mylonas" target="_blank"><img
-                            src="./pictures/icons8-xing-96.png" alt="linkedin logo" width="40px"></a>
+                    <a href="https://www.xing.com/profile/Triantafyllos_Mylonas" target="_blank" rel="noopener">
+                        <img src="./pictures/icons8-xing-96.png" alt="Xing">
+                    </a>
                 </li>
             </ul>
         </div>
     </footer>
 
-
-
+    <script src="./JavaScipt/i18n.js"></script>
 </body>
 
 </html>

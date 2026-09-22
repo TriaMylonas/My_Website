@@ -1,40 +1,74 @@
+/****************************************************/
+/*              Styling for the header               */
+/****************************************************/
 
-
-
-/****************************************************/ 
-/*              Styling for the header              */
-
-
-#logo{
-    width: 70px;
-    border-radius: 60%;
-}
-/* με αυτό τον τρόπο διαλέγω μόνο τα συγκεκριμένα αντικείμενα */
-header nav ul li a span{
-    color: var(--color-special-green);
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
 }
 
-.navigation-bar{
-    margin: 3vh 2vw ;
-    display: flex;
-    justify-content: space-between;
-    /* το κάθε αντικείμενο πιάνει τον χώρο που χρειάζεται μόνο. */
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-/* κάνω τα list items να φαίνοντε στην σειρά */
-.navigation-bar li{
-    display: inline;
-}
-/* Αλλάζω μόνο τα στοιχεία απο τις άγκυρες */
-.navigation-bar a{
-    font-size: .7em;
-    padding: .4em;
-    color: var(--color-white);
-    text-decoration: none;/**** με αυτό δεν είναι υπογραμισμένα να στοιχεία της anchor */
+.navigation-bar {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.navigation-bar a:hover{
-    background-color: rgba(131, 159, 187, .2);
-    border-radius: 8%;
+#logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-sm);
+  color: var(--text);
+}
+
+.nav-links a span {
+  color: var(--accent-2);
+  margin-right: 0.15rem;
+}
+
+.nav-links a:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.lang-toggle {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.32rem 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
