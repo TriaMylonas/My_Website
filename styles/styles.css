@@ -1,174 +1,453 @@
-/* Generall Settings */
-
+/* ============================================================
+   Fonts
+   ============================================================ */
 @font-face {
-  font-family: Roboto;
-  src: url("../Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+  font-family: "Roboto Mono";
+  src: url("../Roboto_Mono/RobotoMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-display: swap;
 }
 
+/* ============================================================
+   Design tokens — dark (default) + light override
+   ============================================================ */
 :root {
-  --color-special-blue: rgb(111, 190, 251);
-  --color-special-green: rgb(67, 205, 150);
-  --color-special-hovergray: rgba(131, 159, 187, 0.2);
-  --color-writinggray: rgba(199, 208, 235, 0.851);
-  --color-white: rgba(239, 239, 239, 0.882);
-  --color-black: rgba(21, 32, 40, 0.839);
-  --color-background: rgb(10, 25, 47);
-  --font: "Roboto", "Courier New", Courier, monospace;
-  --line: 2.5ch;
+  color-scheme: dark light;
+
+  --bg: #0a0f1a;
+  --bg-elevated: #101826;
+  --border: rgba(148, 163, 184, 0.16);
+
+  --text: #e6edf3;
+  --text-muted: #94a3b8;
+
+  --accent: #6fbefb;   /* blue — matches the logo */
+  --accent-2: #43cd96; /* green — existing brand accent */
+  --accent-soft: rgba(111, 190, 251, 0.14);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "Roboto Mono", "Courier New", monospace;
+
+  --max-width: 880px;
+  --space-section: clamp(3.5rem, 9vw, 7rem);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fb;
+    --bg-elevated: #ffffff;
+    --border: rgba(15, 23, 42, 0.1);
+    --text: #101826;
+    --text-muted: #4b5c6b;
+    --accent: #1d7fd6;
+    --accent-2: #0f9d6e;
+    --accent-soft: rgba(29, 127, 214, 0.08);
+  }
+}
+
+/* ============================================================
+   Reset & base
+   ============================================================ */
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 body {
   margin: 0;
-  padding: 0;
-  font-family: "Roboto", "Courier New", Courier, monospace;
-  font-weight: 300;
-  font-size: calc(1.3ch + 0.4vw);
-  line-height: var(--line);
-  color: var(--color-special-blue);
-  background-color: var(--color-background);
-  min-height: 100vh;
-  flex-direction: column; /* αλλάζει την φορά τον κυρίως στοιχείων, για να μπορώ να έχω τους τίτλους στο τέλος */
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* πηγαίνει ανάμεσα κεντρικό τμήμα και στο τελευταίο, με αποτέλεσμα 
-    το footer να είναι πάντ αστο κάτω μέρος της σελίδας */
-article {
-  flex: 1;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.about-p {
-  color: var(--color-writinggray);
-  line-height: 3ch;
-  font-size: calc(1.1ch + 0.4vw);
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-.about-name-and-foto {
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column; /* Add this line to align items in a column */
-  text-align: center; /* Add this line to center-align text */
+a:hover {
+  color: var(--accent-2);
+}
+
+h1,
+h2,
+h3,
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  line-height: var(--line);
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+  color: var(--text);
 }
 
-.about-foto {
-  width: calc(15% + 0.5vw);
-  height: auto;
-  border-radius: 45%;
-  margin-right: 10%;
-  margin-top: 10%;
-  margin-bottom: 5rem; /* Add margin-bottom for spacing */
-  opacity: 0.6;
-}
-.about-name-and-foto h1 {
-  font-size: calc(3ch + 0.4vw);
-}
-
-/* in that way can all the text in the middle stay */
-section {
-  max-width: 800px;
-  margin-inline: auto;
-  padding: 0 1rem 0 1rem;
-}
-
-section {
+h2 {
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  color: var(--text);
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 70vh;
-  margin-inline: auto;
-  justify-content: center;
-  max-width: 800px;
-  display: flex;
-  padding: 0 1rem 0 1rem;
-  text-align: justify; /* Add this property for even distribution */
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0 0 1.75rem;
 }
 
-/* εκανα αυτό το αντικείμενο μονο και μόνο για να κάνω να είναι δυναμικά τα γράμματα στο κέντρο περιπου της οθόνης! */
-.main-div article {
-  max-width: 15vw;
-}
-
-.main-div h1 {
-  color: var(--color-writinggray);
-  font-size: calc(4ch + 0.5vw);
-  text-shadow: 2px 2px 5px var(--color-special-blue);
-  line-height: var(--line);
-}
-
-.main-div h2 {
-  color: rgb(126, 121, 121);
-  font-size: calc(1.5ch + 0.5vw);
+h2 .num {
+  color: var(--accent-2);
   font-weight: 400;
-  margin-bottom: 5rem; /* Add margin-bottom for spacing */
-  text-align: center;
-}
-/*the Schnellecke aanchor in the paragraf to change */
-p a {
-  color: var(--color-special-green);
-  text-decoration: none;
 }
 
-p a:hover {
-  color: var(--color-white);
-  background-color: var(--color-special-hovergray);
-  border-radius: 8px;
-  padding: 0.1ch 0.3ch;
-  box-shadow: 1px 0.5px currentColor;
+h3 {
+  font-size: 1rem;
+  margin: 0 0 0.6rem;
+  color: var(--text);
 }
 
-.main-div h4 {
-  color: aliceblue;
+p {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  max-width: 68ch;
 }
 
-h2,
-h3,
-h4 {
-  line-height: 1.6; /* Adjust the line height to your preference */
-  margin-top: 1rem; /* Add margin to the top for spacing */
-  margin-bottom: 0.5rem; /* Add margin to the bottom for spacing */
-  text-align: center;
-  display: inline-block; /* Add this property to enable vertical alignment */
-  vertical-align: middle; /* Add this property to center vertically */
+/* ============================================================
+   Skip link (a11y)
+   ============================================================ */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  z-index: 100;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
 }
 
-/* Update the styles for the specific section */
-.section-with-greeting {
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* ============================================================
+   Layout
+   ============================================================ */
+section {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: var(--space-section) 1.5rem;
+}
+
+section + section {
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero {
+  min-height: 88vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 70vh; /* Adjust this value based on your needs */
+  gap: 0.5rem;
+  border-top: none;
 }
 
-.section-with-greeting h1 {
-  line-height: var(--line);
-  margin: 0; /* Remove default margin for h1 */
+.hero-eyebrow {
+  color: var(--accent-2);
+  letter-spacing: 0.05em;
+  font-size: 0.95rem;
 }
 
-.section-about-me {
+.hero-photo {
+  width: min(240px, 60%);
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  margin: 1.25rem auto 1rem;
+  border: 3px solid var(--border);
+  box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.55);
+}
+
+.hero-tagline {
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  color: var(--text);
+  font-weight: 500;
+  max-width: 46ch;
+  margin-inline: auto;
+}
+
+.hero-lede {
+  max-width: 56ch;
+  margin: 0.75rem auto 0;
+}
+
+.scroll-hint {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+  opacity: 0.8;
+}
+
+/* ============================================================
+   About
+   ============================================================ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.about-card p {
+  max-width: none;
+}
+
+/* ============================================================
+   "What I do now" / "Where I'm heading"
+   ============================================================ */
+.now-role {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+
+.now-company {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  margin-bottom: 1.5rem;
+}
+
+.now-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.now-list li {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  color: var(--text);
+}
+
+.now-list li::before {
+  content: "→";
+  color: var(--accent-2);
+  flex-shrink: 0;
+}
+
+.pull-quote {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--text);
+  border-left: 3px solid var(--accent-2);
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  max-width: 56ch;
+}
+
+/* ============================================================
+   Homelab
+   ============================================================ */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+}
+
+/* ============================================================
+   Skills
+   ============================================================ */
+.skills-grid {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.skills-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 720px) {
+  .skills-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.skill-kicker {
+  font-family: var(--font-mono);
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  margin: -0.3rem 0 0.9rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.pill.daily {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.pill.foundation {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+}
+
+/* ============================================================
+   Projects
+   ============================================================ */
+.projects-subheading {
+  font-family: var(--font-mono);
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  margin: 2.5rem 0 1.1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.project-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  opacity: 0.94;
+}
+
+.project-body {
+  padding: 1.1rem 1.25rem 1.4rem;
+}
+
+.project-body p {
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.project-card.placeholder {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 70vh; /* Adjust this value based on your needs */
+  border-style: dashed;
+  color: var(--text-muted);
+  padding: 2rem 1.25rem;
+  min-height: 180px;
 }
 
-.section-my-work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 70vh; /* Adjust this value based on your needs */
+.project-card.placeholder h3 {
+  color: var(--text-muted);
 }
