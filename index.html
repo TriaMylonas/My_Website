@@ -14,7 +14,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.triamylo.dev/">
     <meta property="og:site_name" content="Triantafyllos Mylonas">
-    <meta property="og:image" content="./pictures/Logo1.png" alt="Triantafyllos Mylonas Logo">
+    <meta property="og:image" content="https://www.triamylo.dev/pictures/Logo1.png">
+    <meta property="og:image:alt" content="Triantafyllos Mylonas Logo">
 
     <link rel="icon" href="./pictures/Logo1.png">
 
@@ -35,16 +36,19 @@
                 <img id="logo" src="./pictures/Logo1.png" alt="Triantafyllos Mylonas Logo">
             </a>
 
-            <ul class="nav-links">
-                <li><a href="#about" data-i18n="nav.about"><span>01.</span> über mich</a></li>
-                <li><a href="#now" data-i18n="nav.now"><span>02.</span> heute</a></li>
-                <li><a href="#heading" data-i18n="nav.heading"><span>03.</span> wohin</a></li>
-                <li><a href="#homelab" data-i18n="nav.homelab"><span>04.</span> homelab</a></li>
-                <li><a href="#skills" data-i18n="nav.skills"><span>05.</span> skills</a></li>
-                <li><a href="#projects" data-i18n="nav.projects"><span>06.</span> projekte</a></li>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-i18n="nav.about"><span>01.</span> Über mich</a></li>
+                <li><a href="#now" data-i18n="nav.now"><span>02.</span> Heute</a></li>
+                <li><a href="#heading" data-i18n="nav.heading"><span>03.</span> Wohin</a></li>
+                <li><a href="#homelab" data-i18n="nav.homelab"><span>04.</span> Homelab</a></li>
+                <li><a href="#skills" data-i18n="nav.skills"><span>05.</span> Skills</a></li>
+                <li><a href="#projects" data-i18n="nav.projects"><span>06.</span> Projekte</a></li>
             </ul>
 
-            <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+            <div class="nav-actions">
+                <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+                <button id="menuToggle" class="menu-toggle" type="button" aria-label="Menü" aria-controls="navLinks" aria-expanded="false">☰</button>
+            </div>
         </nav>
     </header>
 
@@ -53,7 +57,7 @@
         <section class="hero">
             <p class="hero-eyebrow" data-i18n="hero.eyebrow">Hi, ich bin</p>
             <h1>Triantafyllos Mylonas</h1>
-            <img class="hero-photo" src="./pictures/TriaMyl_Foto.2.1.jpg" alt="Triantafyllos Mylonas">
+            <img class="hero-photo" src="./pictures/TriaMyl_Foto_480.jpg" width="480" height="583" alt="Triantafyllos Mylonas">
             <p class="hero-tagline" data-i18n="hero.tagline">Fachinformatiker für Anwendungsentwicklung – heute in der Daten- und Systemintegration zuhause.</p>
             <p class="hero-lede" data-i18n="hero.lede">
                 Mich interessiert nicht nur, <em>dass</em> etwas funktioniert – sondern <em>warum</em>. Deshalb
@@ -103,7 +107,7 @@
                 <li data-i18n="now.li2">REST- und GraphQL-API-Integrationen</li>
                 <li data-i18n="now.li3">Automatisierung mit PowerShell- und Python-Skripten</li>
                 <li data-i18n="now.li4">Dafür sorgen, dass Daten sauber und zuverlässig zwischen Systemen fließen</li>
-                <li data-i18n="now.li5">Helfen zu Ausbildenen Betreuung</li>
+                <li data-i18n="now.li5">Betreuung von zwei Auszubildenden</li>
             </ul>
         </section>
 
@@ -241,15 +245,6 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="project-card placeholder">
-                    <div class="project-body">
-                        <h3 data-i18n="projects.card3.title">Homelab- / Data-Projekt</h3>
-                        <p data-i18n="projects.card3.text">
-                            Hier entsteht bald ein Projekt aus meinem Homelab bzw. dem Datenbereich. [Platzhalter]
-                        </p>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -279,6 +274,7 @@
     </footer>
 
     <script src="./JavaScipt/i18n.js"></script>
+    <script src="./JavaScipt/nav.js"></script>
 </body>
 
 </html>

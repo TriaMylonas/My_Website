@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -23,24 +23,22 @@
     <header class="site-header">
 
         <nav class="navigation-bar">
-            <a href="../index.html">
+            <a href="../index.html" aria-label="Home">
                 <img id="logo" src="../pictures/Logo1.png" alt="Triantafyllos Mylonas Logo">
             </a>
 
-            <ul class="nav-links">
-                <li>
-                    <a href="../index.html#about"><span>01.</span> über mich</a>
-                </li>
-
-                <li>
-                    <a href="../index.html#now"><span>02.</span> heute</a>
-                </li>
-
-                <li>
-                    <a href="../index.html#projects"><span>03.</span> projekte</a>
-                </li>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html#about"><span>01.</span> Über mich</a></li>
+                <li><a href="../index.html#now"><span>02.</span> Heute</a></li>
+                <li><a href="../index.html#heading"><span>03.</span> Wohin</a></li>
+                <li><a href="../index.html#homelab"><span>04.</span> Homelab</a></li>
+                <li><a href="../index.html#skills"><span>05.</span> Skills</a></li>
+                <li><a href="../index.html#projects"><span>06.</span> Projekte</a></li>
             </ul>
 
+            <div class="nav-actions">
+                <button id="menuToggle" class="menu-toggle" type="button" aria-label="Menü" aria-controls="navLinks" aria-expanded="false">☰</button>
+            </div>
         </nav>
 
     </header>
@@ -49,7 +47,7 @@
 
         <h1>Impressum</h1>
         <p>
-            Angaben gemäß § 5 TMG
+            Angaben gemäß § 5 DDG
         </p>
         <p>
             Triantafyllos Mylonas
@@ -63,7 +61,6 @@
             <strong>Kontakt:</strong>
             <br>
             E-Mail: <a href='mailto:t.mylonas@outlook.de'>t.mylonas@outlook.de</a>
-            </br>
         </p>
         <p>
 
@@ -74,8 +71,8 @@
             <br>
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
             Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7
-            Abs.1 TMG
-            für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind
+            Abs.1 DDG
+            für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind
             wir
             als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
             überwachen
@@ -148,7 +145,8 @@
             <br>
             - Es werden keine persönlichen Daten erhoben.
             <br>
-            - Es werden keine persönlichen Daten im Browser gespeichert.
+            - Im Browser wird nur die gewählte Sprache (DE/EN) lokal gespeichert (localStorage). Diese
+            Einstellung enthält keine persönlichen Daten und wird nicht an einen Server übertragen.
             <br>
             - Es werden keine Informationen an Werbefirmen weitergegeben.
             <br>
@@ -181,7 +179,7 @@
         </div>
     </footer>
 
-
+    <script src="../JavaScipt/nav.js"></script>
 </body>
 
 </html>

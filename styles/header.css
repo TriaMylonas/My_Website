@@ -72,3 +72,56 @@
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* ---------- Mobile menu ---------- */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.1rem;
+  line-height: 1;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .js-nav .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* links go into their own full-width row below logo + buttons */
+  .js-nav .nav-links {
+    display: none;
+    order: 3;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 0.5rem;
+  }
+
+  .js-nav.menu-open .nav-links {
+    display: flex;
+  }
+
+  .js-nav .nav-links a {
+    display: block;
+    padding: 0.7rem 0.6rem;
+    font-size: 0.95rem;
+  }
+}
