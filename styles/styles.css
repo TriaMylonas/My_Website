@@ -437,17 +437,3 @@ section + section {
   max-width: none;
   margin-bottom: 0;
 }
-
-.project-card.placeholder {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-style: dashed;
-  color: var(--text-muted);
-  padding: 2rem 1.25rem;
-  min-height: 180px;
-}
-
-.project-card.placeholder h3 {
-  color: var(--text-muted);
-}

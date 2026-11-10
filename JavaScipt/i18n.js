@@ -1,11 +1,11 @@
 const translations = {
   de: {
-    "nav.about": "01. Über mich",
-    "nav.now": "02. Heute",
-    "nav.heading": "03. Wohin",
-    "nav.homelab": "04. Homelab",
-    "nav.skills": "05. Skills",
-    "nav.projects": "06. Projekte",
+    "nav.about": "<span>01.</span> Über mich",
+    "nav.now": "<span>02.</span> Heute",
+    "nav.heading": "<span>03.</span> Wohin",
+    "nav.homelab": "<span>04.</span> Homelab",
+    "nav.skills": "<span>05.</span> Skills",
+    "nav.projects": "<span>06.</span> Projekte",
 
     "hero.eyebrow": "Hi, ich bin",
     "hero.tagline": "Fachinformatiker für Anwendungsentwicklung – heute in der Daten- und Systemintegration zuhause.",
@@ -70,18 +70,16 @@ const translations = {
     "projects.card1.text": "Ein Programm (WPF, C#), das es ermöglicht, Barcodes in PDF-Dokumente einzufügen, ohne dass die Dokumente manuell geändert werden können, wenn der Benutzer die Barcodes eingibt und speichert.",
     "projects.card2.title": "Excel Bestandsvergleich",
     "projects.card2.text": "Ein Programm (Desktop-App, Java), das zwei Excel-Dateien vergleicht und eine dritte Excel-Datei erstellt, die nur die unterschiedlichen Daten der beiden Dateien zeigt und speichert.",
-    "projects.card3.title": "Homelab- / Data-Projekt",
-    "projects.card3.text": "Hier entsteht bald ein Projekt aus meinem Homelab bzw. dem Datenbereich. [Platzhalter]",
 
     "footer.built": "Designed &amp; Built by <a href=\"index.html\">Triantafyllos Mylonas</a> <a href=\"./html/impressum.html\">[Impressum/Datenschutz]</a>"
   },
   en: {
-    "nav.about": "01. About",
-    "nav.now": "02. Now",
-    "nav.heading": "03. Heading",
-    "nav.homelab": "04. Homelab",
-    "nav.skills": "05. Skills",
-    "nav.projects": "06. Projects",
+    "nav.about": "<span>01.</span> About",
+    "nav.now": "<span>02.</span> Now",
+    "nav.heading": "<span>03.</span> Heading",
+    "nav.homelab": "<span>04.</span> Homelab",
+    "nav.skills": "<span>05.</span> Skills",
+    "nav.projects": "<span>06.</span> Projects",
 
     "hero.eyebrow": "Hi, I'm",
     "hero.tagline": "Trained in application development — now at home in data & systems integration.",
@@ -146,8 +144,6 @@ const translations = {
     "projects.card1.text": "A program (WPF, C#) that inserts barcodes into PDF documents so that the documents can't be manually altered once the user enters and saves the barcodes.",
     "projects.card2.title": "Excel Inventory Comparison",
     "projects.card2.text": "A program (desktop app, Java) that compares two Excel files and creates a third file showing and saving only the differing data between them.",
-    "projects.card3.title": "Homelab / data project",
-    "projects.card3.text": "A project from my homelab or the data space is coming here soon. [placeholder]",
 
     "footer.built": "Designed &amp; Built by <a href=\"index.html\">Triantafyllos Mylonas</a> <a href=\"./html/impressum.html\">[Impressum/Privacy]</a>"
   },
@@ -171,6 +167,11 @@ function applyLang(lang) {
       "aria-label",
       lang === "de" ? "Switch to English" : "Auf Deutsch umschalten"
     );
+  }
+
+  const menuToggle = document.getElementById("menuToggle");
+  if (menuToggle) {
+    menuToggle.setAttribute("aria-label", lang === "de" ? "Menü" : "Menu");
   }
 
   localStorage.setItem("triamylo-lang", lang);
